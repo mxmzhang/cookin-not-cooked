@@ -5,14 +5,15 @@ import os
 API_KEY = 'c85a5e59b51d495392a990aee126e526'
 BASE_URL = 'https://api.spoonacular.com'
 
-my_ingredients = ['chicken', 'rice', 'cheese', 'tomato', 'spinach', 'egg']
+my_ingredients = ['broccoli', 'shrimp', 'rice', 'egg']
 
-def search_recipes_by_ingredients(ingredients, number=20, min_used=2):
+def search_recipes_by_ingredients(ingredients, number = 1, min_used=2):
     params = {
         'apiKey': API_KEY,
         'ingredients': ",".join(ingredients),
         'number': number,
         'ranking': 1,
+        'offset': 3,
         'ignorePantry': True
     }
     response = requests.get(f"{BASE_URL}/recipes/findByIngredients", params=params)
@@ -39,7 +40,7 @@ def get_recipe_info_bulk(recipe_ids):
     response = requests.get(f"{BASE_URL}/recipes/informationBulk", params=params)
     return response.json()
 
-def fetch_enriched_recipes(user_ingredients, max_results=20):
+def fetch_enriched_recipes(user_ingredients, max_results=15):
     basic_results = search_recipes_by_ingredients(user_ingredients, number=max_results)
     recipe_ids = [r['id'] for r in basic_results]
     detailed_info = get_recipe_info_bulk(recipe_ids)
@@ -128,12 +129,10 @@ if __name__ == "__main__":
     
     # Print some basic info
     print(f"Found {len(recipes)} recipes")
-    for i, recipe in enumerate(recipes[:3], 1):  # Show first 3 recipes
+    for i, recipe in enumerate(recipes[:3], 1): 
         print(f"{i}. {recipe['title']}")
     
     # Save to file
     save_results_to_file(recipes, output_file)
     
     print(f"\nResults have been saved to {os.path.abspath(output_file)}")
-    print("To use these results in future runs, you can load them using:")
-    print("recipes = load_results_from_file('recipe_results.json')")

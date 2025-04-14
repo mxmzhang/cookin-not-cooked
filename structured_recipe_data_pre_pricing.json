@@ -1,0 +1,1303 @@
+{
+  "recipes": {
+    "654735": {
+      "name": "Party Rice Balls",
+      "prep_time": 45,
+      "servings": 24,
+      "source": "https://www.foodista.com/recipe/4FYGNZ3F/party-rice-balls",
+      "image": "https://img.spoonacular.com/recipes/654735-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 92.23,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 4.56,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 9.61,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 0.34,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 17.97,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 187.21,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 2.96,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 0.32,
+          "unit": "g"
+        }
+      }
+    },
+    "642125": {
+      "name": "Easy Thai Fried Rice",
+      "prep_time": 45,
+      "servings": 4,
+      "source": "https://www.foodista.com/recipe/4SJKXG87/easy-thai-fried-rice",
+      "image": "https://img.spoonacular.com/recipes/642125-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 587.32,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 4.57,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 117.67,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 0.55,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 122.76,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 269.04,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 15.63,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 3.76,
+          "unit": "g"
+        }
+      }
+    },
+    "649036": {
+      "name": "Korean Candy Chicken",
+      "prep_time": 45,
+      "servings": 6,
+      "source": "https://www.foodista.com/recipe/K3YCBNCV/korean-candy-chicken",
+      "image": "https://img.spoonacular.com/recipes/649036-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 671.38,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 8.68,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 87.82,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 33.49,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 199.71,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 382.01,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 56.9,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 1.62,
+          "unit": "g"
+        }
+      }
+    },
+    "658322": {
+      "name": "Ricotta Cake",
+      "prep_time": 45,
+      "servings": 1,
+      "source": "https://www.foodista.com/recipe/XLH8HV7Y/ricotta-cake",
+      "image": "https://img.spoonacular.com/recipes/658322-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 3191.65,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 95.89,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 452.42,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 203.39,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 1540.77,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 1325.63,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 125.5,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 7.39,
+          "unit": "g"
+        }
+      }
+    },
+    "636199": {
+      "name": "Broccoli Oatmeal Breakfast Casserole",
+      "prep_time": 45,
+      "servings": 4,
+      "source": "https://www.foodista.com/recipe/J33PTBPD/broccoli-oatmeal-breakfast-casserole",
+      "image": "https://img.spoonacular.com/recipes/636199-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 271.22,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 11.31,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 31.61,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 1.92,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 186.56,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 767.83,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 13.22,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 4.76,
+          "unit": "g"
+        }
+      }
+    },
+    "660015": {
+      "name": "Shrimp Udon w Fish Cakes & Poached Egg",
+      "prep_time": 45,
+      "servings": 2,
+      "source": "https://www.foodista.com/recipe/M8LVSKDM/shrimp-udon-w-fish-cakes-poached-egg",
+      "image": "https://img.spoonacular.com/recipes/660015-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 130.3,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 5.22,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 2.14,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 0.42,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 194.86,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 347.69,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 18.46,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 0.33,
+          "unit": "g"
+        }
+      }
+    },
+    "658290": {
+      "name": "Rice with Fried Egg and Sausage",
+      "prep_time": 45,
+      "servings": 1,
+      "source": "https://www.foodista.com/recipe/LX87XTNW/rice-with-fried-egg-and-sausage",
+      "image": "https://img.spoonacular.com/recipes/658290-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 649.22,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 30.29,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 74.66,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 0.38,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 194.59,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 612.97,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 17.1,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 1.25,
+          "unit": "g"
+        }
+      }
+    },
+    "644914": {
+      "name": "Glutinous Rice Poppy Muffins",
+      "prep_time": 45,
+      "servings": 10,
+      "source": "https://www.foodista.com/recipe/4RBVSBHC/glutinous-rice-poppy-muffins",
+      "image": "https://img.spoonacular.com/recipes/644914-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 252.47,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 11.43,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 32.17,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 8.58,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 24.4,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 77.94,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 6.85,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 4.47,
+          "unit": "g"
+        }
+      }
+    },
+    "633756": {
+      "name": "Baked Rice Pudding",
+      "prep_time": 45,
+      "servings": 4,
+      "source": "https://www.foodista.com/recipe/HNT2Y35T/baked-rice-pudding-recipe",
+      "image": "https://img.spoonacular.com/recipes/633756-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 391.14,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 6.87,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 75.47,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 56.75,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 98.31,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 378.66,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 8.63,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 0.91,
+          "unit": "g"
+        }
+      }
+    },
+    "716432": {
+      "name": "Finger Foods: Frittata Muffins",
+      "prep_time": 45,
+      "servings": 1,
+      "source": "https://fullbellysisters.blogspot.com/2014/05/finger-foods-frittata-muffins.html",
+      "image": "https://img.spoonacular.com/recipes/716432-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 654.73,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 44.88,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 12.9,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 5.84,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 1038.7,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 964.99,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 49.45,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 3.51,
+          "unit": "g"
+        }
+      }
+    },
+    "637658": {
+      "name": "Cheesy Ham and Shrimp Macaroni Au Gratin",
+      "prep_time": 45,
+      "servings": 4,
+      "source": "https://www.foodista.com/recipe/4F3FG5W5/cheesy-ham-and-shrimp-macaroni-au-gratin",
+      "image": "https://img.spoonacular.com/recipes/637658-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 672.37,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 20.29,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 97.05,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 28.76,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 58.84,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 672.03,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 25.21,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 5.22,
+          "unit": "g"
+        }
+      }
+    },
+    "641911": {
+      "name": "Easy Chicken, Kielbasa and Shrimp Paella",
+      "prep_time": 45,
+      "servings": 8,
+      "source": "https://www.foodista.com/recipe/JYKRF2ZZ/easy-chicken-kielbasa-and-shrimp-paella",
+      "image": "https://img.spoonacular.com/recipes/641911-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 385.4,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 8.78,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 42.48,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 3.62,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 130.99,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 1406.48,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 32.61,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 1.75,
+          "unit": "g"
+        }
+      }
+    },
+    "663553": {
+      "name": "Tomato and Bacon Pizza With Rice Crust",
+      "prep_time": 45,
+      "servings": 8,
+      "source": "https://www.foodista.com/recipe/RB57HRNX/tomato-and-bacon-pizza-with-rice-crust",
+      "image": "https://img.spoonacular.com/recipes/663553-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 162.78,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 7.29,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 15.56,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 2.8,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 43.31,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 204.46,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 8.91,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 1.44,
+          "unit": "g"
+        }
+      }
+    },
+    "635067": {
+      "name": "Black Bean Garlic Shrimp Scramble",
+      "prep_time": 45,
+      "servings": 2,
+      "source": "https://www.foodista.com/recipe/C8TPQZYT/black-bean-garlic-shrimp-scramble",
+      "image": "https://img.spoonacular.com/recipes/635067-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 375.62,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 30.19,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 11.86,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 2.94,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 334.92,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 190.3,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 16.02,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 2.8,
+          "unit": "g"
+        }
+      }
+    },
+    "636215": {
+      "name": "Broccoli Rice Dish",
+      "prep_time": 45,
+      "servings": 1,
+      "source": "http://www.foodista.com/recipe/BFPM6WYQ/broccoli-rice-dish",
+      "image": "https://img.spoonacular.com/recipes/636215-556x370.jpg",
+      "nutrition": {
+        "calories": {
+          "amount": 1126.71,
+          "unit": "kcal"
+        },
+        "fat": {
+          "amount": 68.46,
+          "unit": "g"
+        },
+        "carbohydrates": {
+          "amount": 108.8,
+          "unit": "g"
+        },
+        "sugar": {
+          "amount": 12.34,
+          "unit": "g"
+        },
+        "cholesterol": {
+          "amount": 161.26,
+          "unit": "mg"
+        },
+        "sodium": {
+          "amount": 2592.29,
+          "unit": "mg"
+        },
+        "protein": {
+          "amount": 19.82,
+          "unit": "g"
+        },
+        "fiber": {
+          "amount": 3.53,
+          "unit": "g"
+        }
+      }
+    }
+  },
+  "ingredients": {
+    "10220444": {
+      "name": "rice",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1123": {
+      "name": "eggs",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1038": {
+      "name": "romano cheese",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "2029": {
+      "name": "parsley or",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "18079": {
+      "name": "breadcrumbs",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "93633": {
+      "name": "kaffir leaves",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "93605": {
+      "name": "curry paste",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "11583": {
+      "name": "vegetables",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "16424": {
+      "name": "soy sauce",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "12023": {
+      "name": "sesame seeds",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1055062": {
+      "name": "chicken breasts",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "18369": {
+      "name": "baking powder",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "2050": {
+      "name": "vanilla extract",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "10011090": {
+      "name": "broccoli florets",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "2031": {
+      "name": "cayenne pepper",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1082": {
+      "name": "milk",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "8402": {
+      "name": "oats",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "15270": {
+      "name": "shrimp udon",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "10115261": {
+      "name": "fish cake",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "11291": {
+      "name": "scallion",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1001": {
+      "name": "butter",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "11446": {
+      "name": "sprinkle of nori goma furikake",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1027063": {
+      "name": "turkey breakfast sausage link",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "10020054": {
+      "name": "glutinous rice flour",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1214": {
+      "name": "evaporated milk",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "2033": {
+      "name": "poppy fix",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "9299": {
+      "name": "raisins",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "11156": {
+      "name": "chives",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1011077": {
+      "name": "t cream",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "10120499": {
+      "name": "elbow pasta",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "10151": {
+      "name": "ham",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "11260": {
+      "name": "big shitake mushrooms",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "42130": {
+      "name": "at least of turkey bacon",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "11322": {
+      "name": "peas & carrots",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "99210": {
+      "name": "black bean garlic sauce",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "11215": {
+      "name": "fried garlic",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "1001188": {
+      "name": "cheez whiz",
+      "unit_price": null,
+      "price_unit": null
+    },
+    "11282": {
+      "name": "onion",
+      "unit_price": null,
+      "price_unit": null
+    }
+  },
+  "recipe_ingredients": {
+    "654735": [
+      [
+        "10220444",
+        1.0,
+        "cup"
+      ],
+      [
+        "1123",
+        2.0,
+        ""
+      ],
+      [
+        "1038",
+        1.0,
+        "cup"
+      ],
+      [
+        "2029",
+        1.0,
+        "Tbs"
+      ],
+      [
+        "18079",
+        1.0,
+        "cup"
+      ]
+    ],
+    "642125": [
+      [
+        "10220444",
+        3.0,
+        "cups"
+      ],
+      [
+        "1123",
+        3.0,
+        ""
+      ],
+      [
+        "93633",
+        3.0,
+        ""
+      ],
+      [
+        "93605",
+        1.0,
+        "tablespoon"
+      ],
+      [
+        "11583",
+        1.0,
+        "cup"
+      ]
+    ],
+    "649036": [
+      [
+        "10220444",
+        6.0,
+        "servings"
+      ],
+      [
+        "1123",
+        2.0,
+        ""
+      ],
+      [
+        "16424",
+        1.0,
+        "tablespoon"
+      ],
+      [
+        "12023",
+        1.0,
+        "tablespoon"
+      ],
+      [
+        "1055062",
+        3.0,
+        "lbs"
+      ]
+    ],
+    "658322": [
+      [
+        "1123",
+        2.0,
+        ""
+      ],
+      [
+        "10220444",
+        1.0,
+        "cup"
+      ],
+      [
+        "18369",
+        1.0,
+        "teaspoon"
+      ],
+      [
+        "10220444",
+        1.0,
+        "pound"
+      ],
+      [
+        "2050",
+        1.0,
+        "teaspoon"
+      ]
+    ],
+    "636199": [
+      [
+        "10011090",
+        1.5,
+        "cups"
+      ],
+      [
+        "1123",
+        4.0,
+        "large"
+      ],
+      [
+        "18369",
+        2.0,
+        "tsp"
+      ],
+      [
+        "2031",
+        0.5,
+        "tsp"
+      ],
+      [
+        "1082",
+        3.0,
+        "tbsp"
+      ],
+      [
+        "8402",
+        2.0,
+        "cups"
+      ]
+    ],
+    "660015": [
+      [
+        "1123",
+        2.0,
+        ""
+      ],
+      [
+        "15270",
+        2.0,
+        "package"
+      ],
+      [
+        "10115261",
+        0.5,
+        "cup"
+      ],
+      [
+        "10220444",
+        1.0,
+        "tsp"
+      ],
+      [
+        "11291",
+        2.0,
+        "servings"
+      ],
+      [
+        "16424",
+        0.5,
+        "tbsp"
+      ]
+    ],
+    "658290": [
+      [
+        "1123",
+        1.0,
+        ""
+      ],
+      [
+        "10220444",
+        0.5,
+        "cup"
+      ],
+      [
+        "1001",
+        1.0,
+        "serving"
+      ],
+      [
+        "11446",
+        1.0,
+        "serving"
+      ],
+      [
+        "16424",
+        1.0,
+        "teaspoon"
+      ],
+      [
+        "1027063",
+        1.0,
+        ""
+      ]
+    ],
+    "644914": [
+      [
+        "1123",
+        1.0,
+        "large"
+      ],
+      [
+        "10020054",
+        200.0,
+        "grams"
+      ],
+      [
+        "18369",
+        1.0,
+        "teaspoon"
+      ],
+      [
+        "1214",
+        200.0,
+        "grams"
+      ],
+      [
+        "2033",
+        100.0,
+        "grams"
+      ],
+      [
+        "9299",
+        30.0,
+        "grams"
+      ]
+    ],
+    "633756": [
+      [
+        "1123",
+        2.0,
+        ""
+      ],
+      [
+        "10220444",
+        0.6666667,
+        "cup"
+      ],
+      [
+        "1082",
+        2.25,
+        "cups"
+      ],
+      [
+        "1001",
+        0.25,
+        "teaspoon"
+      ],
+      [
+        "9299",
+        0.25,
+        "cup"
+      ],
+      [
+        "2050",
+        1.0,
+        "teaspoon"
+      ]
+    ],
+    "716432": [
+      [
+        "10011090",
+        0.75,
+        "cup"
+      ],
+      [
+        "1123",
+        6.0,
+        ""
+      ],
+      [
+        "11156",
+        2.0,
+        "T"
+      ],
+      [
+        "1011077",
+        1.0,
+        ""
+      ],
+      [
+        "2031",
+        0.33333334,
+        "cup"
+      ],
+      [
+        "1038",
+        0.5,
+        "cup"
+      ],
+      [
+        "8402",
+        0.33333334,
+        "cup"
+      ]
+    ],
+    "637658": [
+      [
+        "10011090",
+        150.0,
+        "g"
+      ],
+      [
+        "15270",
+        10.0,
+        "medium"
+      ],
+      [
+        "16424",
+        300.0,
+        "g"
+      ],
+      [
+        "10120499",
+        250.0,
+        "g"
+      ],
+      [
+        "10151",
+        3.0,
+        "slices"
+      ],
+      [
+        "11260",
+        3.0,
+        ""
+      ],
+      [
+        "1038",
+        1.0,
+        "oz"
+      ]
+    ],
+    "641911": [
+      [
+        "10220444",
+        2.0,
+        "cups"
+      ],
+      [
+        "15270",
+        0.75,
+        "pound"
+      ],
+      [
+        "1055062",
+        10.0,
+        "ounces"
+      ],
+      [
+        "1055062",
+        4.0,
+        "cups"
+      ],
+      [
+        "10220444",
+        1.0,
+        "teaspoon"
+      ],
+      [
+        "16424",
+        1.0,
+        "cup"
+      ],
+      [
+        "1027063",
+        16.0,
+        "ounces"
+      ]
+    ],
+    "663553": [
+      [
+        "10220444",
+        2.0,
+        "cups"
+      ],
+      [
+        "1123",
+        1.0,
+        ""
+      ],
+      [
+        "2031",
+        2.0,
+        ""
+      ],
+      [
+        "9299",
+        1.0,
+        "teaspoon"
+      ],
+      [
+        "1038",
+        2.0,
+        "cups"
+      ],
+      [
+        "8402",
+        3.0,
+        ""
+      ],
+      [
+        "42130",
+        6.0,
+        "strips"
+      ]
+    ],
+    "635067": [
+      [
+        "15270",
+        12.0,
+        "pieces"
+      ],
+      [
+        "1123",
+        4.0,
+        ""
+      ],
+      [
+        "11322",
+        0.5,
+        "cup"
+      ],
+      [
+        "11260",
+        1.0,
+        "pieces"
+      ],
+      [
+        "99210",
+        2.0,
+        "tablespoons"
+      ],
+      [
+        "11583",
+        1.0,
+        ""
+      ],
+      [
+        "11215",
+        2.0,
+        "tablespoons"
+      ]
+    ],
+    "636215": [
+      [
+        "10011090",
+        1.0,
+        "box"
+      ],
+      [
+        "10220444",
+        1.0,
+        "cup"
+      ],
+      [
+        "1001",
+        0.5,
+        "stick"
+      ],
+      [
+        "1001188",
+        1.0,
+        "jar"
+      ],
+      [
+        "1055062",
+        1.0,
+        "can"
+      ],
+      [
+        "1082",
+        0.5,
+        "cup"
+      ],
+      [
+        "11282",
+        1.0,
+        ""
+      ]
+    ]
+  }
+}
