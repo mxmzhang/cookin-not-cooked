@@ -47,7 +47,7 @@ def process_recipes(recipes):
 
     return ingredient_dict, protein_list, calories_list, ingredient_matrix
 
-def cp(data, protein, calories, budget, calorie_cap, chosen_meals = 5):
+def cp(data, budget, calorie_cap, chosen_meals = 5):
     model = cp_model.CpModel()
     rlen = len(data["recipes"])
     ilen = len(data["ingredients"])
@@ -106,10 +106,10 @@ def cp(data, protein, calories, budget, calorie_cap, chosen_meals = 5):
 
     # objective function
     total_protein = model.NewIntVar(0, 10000000, "total_protein")
-    model.Add(total_protein == sum(protein[rid] * x[rid] for rid in len(rlen)))
+    model.Add(total_protein == sum(recipes[rid].get("nutrition", {})["protein"] * x[rid] for rid in len(rlen)))
 
     total_calories = model.NewIntVar(0, 10000000, "total_calories")
-    model.Add(total_calories == sum(calories[rid] * x[rid] for rid in len(rlen)))
+    model.Add(total_calories == sum(recipes[rid].get("nutrition", {})["calories"] * x[rid] for rid in len(rlen)))
 
     obj_expr = model.NewIntVar(-100000000, 100000000, "obj_expr")
 
