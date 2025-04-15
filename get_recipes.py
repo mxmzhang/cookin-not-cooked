@@ -121,18 +121,14 @@ def load_results_from_file(filename):
         return None
     
 if __name__ == "__main__":
-    print("Fetching recipes from API...")
     output_file = "recipe_results.json"
     
-    # Get the recipes from the API
     recipes = fetch_enriched_recipes(my_ingredients)
     
-    # Print some basic info
     print(f"Found {len(recipes)} recipes")
     for i, recipe in enumerate(recipes[:3], 1): 
         print(f"{i}. {recipe['title']}")
     
-    # Save to file
     save_results_to_file(recipes, output_file)
     
     print(f"\nResults have been saved to {os.path.abspath(output_file)}")

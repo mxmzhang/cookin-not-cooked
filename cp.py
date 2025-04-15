@@ -113,7 +113,8 @@ def cp(data, budget, calorie_cap, chosen_meals = 5):
 
     obj_expr = model.NewIntVar(-100000000, 100000000, "obj_expr")
 
-    model.Add(obj_expr == (3*total_protein - total_calories))
+    # make sure units of things in objective function are scaled the same
+    model.Add(obj_expr == (3*total_protein - total_calories)) # test/experiment with objective functions
     model.Maximize(obj_expr)
 
     solver = cp_model.CpSolver()
