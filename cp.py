@@ -102,7 +102,7 @@ def cp(data, budget, calorie_cap, chosen_meals = 5):
     model.Add(sum(cost_expr) <= budget)
 
     for rid in range(rlen):
-        model.Add(calories[rid] * x[rid] <= calorie_cap)
+        model.Add(recipes[rid].get("nutrition",{})["calories"] * x[rid] <= calorie_cap)
 
     # objective function
     total_protein = model.NewIntVar(0, 10000000, "total_protein")
