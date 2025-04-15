@@ -157,7 +157,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description='Generate ingredient price database from Kroger API')
-    parser.add_argument('--input', default="structured_recipe_data_pre_pricing.json", 
+    parser.add_argument('--input', default="recipe_data_cleaned.json", 
                         help='Input JSON file with ingredient data')
     parser.add_argument('--output', default="ingredient_prices.json", 
                         help='Output file for ingredient prices')

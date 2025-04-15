@@ -243,11 +243,11 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description='Generate GEMINI QUERY formatted data')
-    parser.add_argument('--recipe-data', default="structured_recipe_data_pre_pricing.json", 
+    parser.add_argument('--recipe-data', default="recipe_data_cleaned.json", 
                         help='Input JSON file with recipe data')
     parser.add_argument('--prices', default="ingredient_prices.json", 
                         help='Input JSON file with ingredient prices')
-    parser.add_argument('--output', default="gemini_query_results.json", 
+    parser.add_argument('--output', default="ingredient_usage.json", 
                         help='Output file for Gemini query results')
     parser.add_argument('--api-key', default="AIzaSyAy2D2jxTMLUpow2jsf6IIjC2XR6sENRDs", 
                         help='Gemini API key')

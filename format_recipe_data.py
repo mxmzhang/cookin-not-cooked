@@ -129,9 +129,9 @@ if __name__ == "__main__":
         print(f"Processed {len(data['recipes'])} recipes")
         
         # Save data
-        with open("structured_recipe_data_pre_pricing.json", "w") as f:
+        with open("recipe_data_cleaned.json", "w") as f:
             json.dump(data, f, indent=2)
-        print(f"\nStructured data before pricing saved to structured_recipe_data_pre_pricing.json")
+        print(f"\nStructured data before pricing saved to recipe_data_cleaned.json")
         
     else:
         print("No recipes loaded. Please check the filename and file format.")
