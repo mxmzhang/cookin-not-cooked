@@ -1,0 +1,1239 @@
+{
+  "gemini_query": {
+    "recipes": [
+      {
+        "r_id": "1054737",
+        "ingredients": [
+          {
+            "ri_id": "1123",
+            "name": "egg",
+            "proportion": 0.0833,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "98849",
+            "name": "canned tomatoes",
+            "proportion": 0.6552,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10620420",
+            "name": "lasagna noodles",
+            "proportion": 1.125,
+            "package_cost": 219
+          },
+          {
+            "ri_id": "11282",
+            "name": "onion",
+            "proportion": 0.0039,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "10011693",
+            "name": "canned tomatoes",
+            "proportion": 0.4138,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "11549",
+            "name": "canned tomatoes",
+            "proportion": 1.1034,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "2003",
+            "name": "basil",
+            "proportion": 3.0,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "10511297",
+            "name": "parsley",
+            "proportion": null,
+            "package_cost": 199
+          },
+          {
+            "ri_id": "11215",
+            "name": "garlic",
+            "proportion": 0.01,
+            "package_cost": 68
+          },
+          {
+            "ri_id": "23557",
+            "name": "ground beef i like",
+            "proportion": 1.0,
+            "package_cost": 649
+          },
+          {
+            "ri_id": "7036",
+            "name": "sausage",
+            "proportion": 1.0,
+            "package_cost": 549
+          },
+          {
+            "ri_id": "1022027",
+            "name": "onion",
+            "proportion": 0.0039,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "1041009",
+            "name": "m zarella cheese",
+            "proportion": 0.125,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "1033",
+            "name": "parmesan reggiano",
+            "proportion": 0.15,
+            "package_cost": 899
+          },
+          {
+            "ri_id": "1036",
+            "name": "m zarella cheese",
+            "proportion": 2.0,
+            "package_cost": 379
+          }
+        ]
+      },
+      {
+        "r_id": "659006",
+        "ingredients": [
+          {
+            "ri_id": "11677",
+            "name": "shallot",
+            "proportion": 0.00227,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "1129",
+            "name": "hardboiled eggs",
+            "proportion": 1.0,
+            "package_cost": 359
+          },
+          {
+            "ri_id": "10011355",
+            "name": "canned tomatoes",
+            "proportion": 0.6897,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "11529",
+            "name": "canned tomatoes",
+            "proportion": 0.2069,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10011282",
+            "name": "onion",
+            "proportion": 0.00227,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "9152",
+            "name": "lemon juice",
+            "proportion": 0.0333,
+            "package_cost": 169
+          },
+          {
+            "ri_id": "1012049",
+            "name": "thyme leaves",
+            "proportion": 0.1282,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "2044",
+            "name": "basil",
+            "proportion": 0.4,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "2027",
+            "name": "thyme leaves",
+            "proportion": 0.0256,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "1032046",
+            "name": "dijon mustard",
+            "proportion": 0.00833,
+            "package_cost": 179
+          },
+          {
+            "ri_id": "15117",
+            "name": "grilledwise tuna steaks",
+            "proportion": 1.0,
+            "package_cost": 400
+          },
+          {
+            "ri_id": "11250",
+            "name": "butter lettuce",
+            "proportion": 0.5,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "11052",
+            "name": "grilledwise tuna steaks",
+            "proportion": 1.0,
+            "package_cost": 400
+          },
+          {
+            "ri_id": "9195",
+            "name": "ni\u00e7oise olives",
+            "proportion": 0.0417,
+            "package_cost": 399
+          },
+          {
+            "ri_id": "15001",
+            "name": "capers",
+            "proportion": 0.0571,
+            "package_cost": 349
+          }
+        ]
+      },
+      {
+        "r_id": "646577",
+        "ingredients": [
+          {
+            "ri_id": "11294",
+            "name": "onion",
+            "proportion": 0.25,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "10011355",
+            "name": "canned tomatoes",
+            "proportion": 0.27586,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10611529",
+            "name": "canned tomatoes",
+            "proportion": 0.55172,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10011693",
+            "name": "canned tomatoes",
+            "proportion": 0.06897,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10020499",
+            "name": "dijon mustard",
+            "proportion": 0.04167,
+            "package_cost": 179
+          },
+          {
+            "ri_id": "6172",
+            "name": "chicken stock",
+            "proportion": 0.21875,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "6080",
+            "name": "chicken stock",
+            "proportion": null,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "11215",
+            "name": "garlic",
+            "proportion": 2.0,
+            "package_cost": 68
+          },
+          {
+            "ri_id": "11124",
+            "name": "capers",
+            "proportion": 0.85714,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "11549",
+            "name": "canned tomatoes",
+            "proportion": null,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10011457",
+            "name": "spinach",
+            "proportion": 0.3,
+            "package_cost": 229
+          },
+          {
+            "ri_id": "10016051",
+            "name": "canned tomatoes",
+            "proportion": 0.06897,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10016033",
+            "name": "kidney beans",
+            "proportion": 0.06452,
+            "package_cost": 89
+          },
+          {
+            "ri_id": "1032009",
+            "name": "pepper flakes",
+            "proportion": null,
+            "package_cost": 269
+          },
+          {
+            "ri_id": "2015",
+            "name": "madras curry powder",
+            "proportion": null,
+            "package_cost": 399
+          },
+          {
+            "ri_id": "2028",
+            "name": "paprika",
+            "proportion": null,
+            "package_cost": 125
+          }
+        ]
+      },
+      {
+        "r_id": "654744",
+        "ingredients": [
+          {
+            "ri_id": "10011090",
+            "name": "broccoli florets",
+            "proportion": 0.234,
+            "package_cost": 649
+          },
+          {
+            "ri_id": "11529",
+            "name": "canned tomatoes",
+            "proportion": 0.276,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "11291",
+            "name": "onion",
+            "proportion": 0.007,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "11282",
+            "name": "onion",
+            "proportion": 0.003,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "1123",
+            "name": "egg",
+            "proportion": 1.0,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "15076",
+            "name": "alaska salmon",
+            "proportion": 0.777,
+            "package_cost": 1099
+          },
+          {
+            "ri_id": "10018338",
+            "name": "ready-made shortcrust pastry",
+            "proportion": 1.0,
+            "package_cost": 400
+          },
+          {
+            "ri_id": "11011",
+            "name": "asparagus spears",
+            "proportion": 0.75,
+            "package_cost": 419
+          },
+          {
+            "ri_id": "11246",
+            "name": "leek",
+            "proportion": 0.007,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "15077",
+            "name": "shallot",
+            "proportion": 0.046,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "1059195",
+            "name": "ni\u00e7oise olives",
+            "proportion": 0.133,
+            "package_cost": 399
+          },
+          {
+            "ri_id": "1021004",
+            "name": "m zarella cheese",
+            "proportion": 0.625,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "1009",
+            "name": "m zarella cheese",
+            "proportion": 0.625,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "1026",
+            "name": "m zarella cheese",
+            "proportion": 0.938,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "1019",
+            "name": "m zarella cheese",
+            "proportion": 0.625,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "93698",
+            "name": "capers",
+            "proportion": 0.029,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "1077",
+            "name": "milk",
+            "proportion": 0.017,
+            "package_cost": 259
+          },
+          {
+            "ri_id": "1001052",
+            "name": "single cream",
+            "proportion": null,
+            "package_cost": 639
+          }
+        ]
+      },
+      {
+        "r_id": "638118",
+        "ingredients": [
+          {
+            "ri_id": "11420420",
+            "name": "spaghetti",
+            "proportion": 1.0,
+            "package_cost": 125
+          },
+          {
+            "ri_id": "1055062",
+            "name": "chicken stock",
+            "proportion": 0.125,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "1123",
+            "name": "egg",
+            "proportion": 0.0833,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "11529",
+            "name": "canned tomatoes",
+            "proportion": 0.069,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "18079",
+            "name": "panko",
+            "proportion": 0.125,
+            "package_cost": 259
+          },
+          {
+            "ri_id": "1032",
+            "name": "m zarella cheese",
+            "proportion": 0.0625,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "2044",
+            "name": "basil",
+            "proportion": 0.04,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "1053",
+            "name": "single cream",
+            "proportion": null,
+            "package_cost": 639
+          }
+        ]
+      },
+      {
+        "r_id": "665671",
+        "ingredients": [
+          {
+            "ri_id": "10011090",
+            "name": "broccoli florets",
+            "proportion": 0.015625,
+            "package_cost": 649
+          },
+          {
+            "ri_id": "5062",
+            "name": "chicken stock",
+            "proportion": 0.03125,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "11282",
+            "name": "onion",
+            "proportion": 0.022727,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "20114",
+            "name": "lasagna noodles",
+            "proportion": 0.25,
+            "package_cost": 219
+          },
+          {
+            "ri_id": "10111962",
+            "name": "pepper flakes",
+            "proportion": 0.028571,
+            "package_cost": 269
+          },
+          {
+            "ri_id": "10211215",
+            "name": "garlic",
+            "proportion": null,
+            "package_cost": 68
+          },
+          {
+            "ri_id": "11216",
+            "name": "single cream",
+            "proportion": null,
+            "package_cost": 639
+          },
+          {
+            "ri_id": "6175",
+            "name": "lemon juice",
+            "proportion": 0.005208,
+            "package_cost": 169
+          },
+          {
+            "ri_id": "16124",
+            "name": "soy sauce",
+            "proportion": 0.0125,
+            "package_cost": 149
+          }
+        ]
+      },
+      {
+        "r_id": "644205",
+        "ingredients": [
+          {
+            "ri_id": "11090",
+            "name": "broccoli florets",
+            "proportion": 0.03125,
+            "package_cost": 649
+          },
+          {
+            "ri_id": "1123",
+            "name": "egg",
+            "proportion": 0.25,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "11291",
+            "name": "onion",
+            "proportion": null,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "11529",
+            "name": "canned tomatoes",
+            "proportion": 0.1034,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "11124",
+            "name": "capers",
+            "proportion": 0.1429,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "11167",
+            "name": "ears of corn",
+            "proportion": 0.1667,
+            "package_cost": 699
+          },
+          {
+            "ri_id": "10211297",
+            "name": "parsley",
+            "proportion": null,
+            "package_cost": 199
+          },
+          {
+            "ri_id": "11215",
+            "name": "garlic",
+            "proportion": 1.0,
+            "package_cost": 68
+          },
+          {
+            "ri_id": "1159",
+            "name": "laura chenel's chabis goat cheese",
+            "proportion": 1.0,
+            "package_cost": 799
+          },
+          {
+            "ri_id": "11641",
+            "name": "summer squash",
+            "proportion": null,
+            "package_cost": 149
+          }
+        ]
+      },
+      {
+        "r_id": "661984",
+        "ingredients": [
+          {
+            "ri_id": "1123",
+            "name": "egg",
+            "proportion": 0.16666666666666666,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "10011284",
+            "name": "onion",
+            "proportion": 0.002272727272727273,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "10011355",
+            "name": "canned tomatoes",
+            "proportion": 0.3448275862068966,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "11529",
+            "name": "canned tomatoes",
+            "proportion": 0.01724137931034483,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "2044",
+            "name": "basil",
+            "proportion": 4.0,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "1159",
+            "name": "laura chenel's chabis goat cheese",
+            "proportion": 1.0,
+            "package_cost": 799
+          },
+          {
+            "ri_id": "11333",
+            "name": "bell pepper",
+            "proportion": 0.25,
+            "package_cost": 99
+          },
+          {
+            "ri_id": "10023572",
+            "name": "ground beef i like",
+            "proportion": 1.5,
+            "package_cost": 649
+          },
+          {
+            "ri_id": "2023",
+            "name": "marjoram",
+            "proportion": 0.6756756756756757,
+            "package_cost": 699
+          },
+          {
+            "ri_id": "99226",
+            "name": "sausage",
+            "proportion": 0.00625,
+            "package_cost": 549
+          }
+        ]
+      },
+      {
+        "r_id": "653098",
+        "ingredients": [
+          {
+            "ri_id": "10311529",
+            "name": "canned tomatoes",
+            "proportion": 0.41379,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "1123",
+            "name": "egg",
+            "proportion": 0.33333,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "11282",
+            "name": "onion",
+            "proportion": null,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "11352",
+            "name": "canned tomatoes",
+            "proportion": 0.13793,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "15001",
+            "name": "capers",
+            "proportion": 0.57143,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "2054",
+            "name": "capers as you like",
+            "proportion": 1.0,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "1032046",
+            "name": "dijon mustard",
+            "proportion": 0.08333,
+            "package_cost": 179
+          },
+          {
+            "ri_id": "11052",
+            "name": "grilledwise tuna steaks",
+            "proportion": 1.0,
+            "package_cost": 400
+          },
+          {
+            "ri_id": "9195",
+            "name": "ni\u00e7oise olives",
+            "proportion": 1.0,
+            "package_cost": 399
+          },
+          {
+            "ri_id": "2068",
+            "name": "wine vinegar",
+            "proportion": 0.125,
+            "package_cost": 329
+          },
+          {
+            "ri_id": "11821",
+            "name": "bell pepper",
+            "proportion": null,
+            "package_cost": 99
+          }
+        ]
+      },
+      {
+        "r_id": "42312",
+        "ingredients": [
+          {
+            "ri_id": "1123",
+            "name": "egg",
+            "proportion": 0.0833,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "10520420",
+            "name": "lasagna noodles",
+            "proportion": 0.0625,
+            "package_cost": 219
+          },
+          {
+            "ri_id": "11282",
+            "name": "onion",
+            "proportion": 0.0069,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "10011693",
+            "name": "canned tomatoes",
+            "proportion": 0.4138,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "18079",
+            "name": "panko",
+            "proportion": 0.03125,
+            "package_cost": 259
+          },
+          {
+            "ri_id": "11549",
+            "name": "canned tomatoes",
+            "proportion": 1.0345,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10023572",
+            "name": "ground beef i like",
+            "proportion": 1.5,
+            "package_cost": 649
+          },
+          {
+            "ri_id": "2027",
+            "name": "thyme leaves",
+            "proportion": 0.2564,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "11297",
+            "name": "parsley",
+            "proportion": null,
+            "package_cost": 199
+          },
+          {
+            "ri_id": "1035",
+            "name": "m zarella cheese",
+            "proportion": 1.0,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "1036",
+            "name": "m zarella cheese",
+            "proportion": 2.0,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "1001026",
+            "name": "m zarella cheese",
+            "proportion": 2.0,
+            "package_cost": 379
+          }
+        ]
+      },
+      {
+        "r_id": "157991",
+        "ingredients": [
+          {
+            "ri_id": "11529",
+            "name": "canned tomatoes",
+            "proportion": 0.27586,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "10611282",
+            "name": "onion",
+            "proportion": 0.09091,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "10111362",
+            "name": "canned tomatoes",
+            "proportion": 0.13793,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "11520420",
+            "name": "ziti pasta",
+            "proportion": 0.0625,
+            "package_cost": 189
+          },
+          {
+            "ri_id": "2004",
+            "name": "add 1 teaspoon bay",
+            "proportion": 1.0,
+            "package_cost": 400
+          },
+          {
+            "ri_id": "2007",
+            "name": "celery seed",
+            "proportion": 0.05348,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "11215",
+            "name": "garlic",
+            "proportion": null,
+            "package_cost": 68
+          },
+          {
+            "ri_id": "11233",
+            "name": "parsley",
+            "proportion": null,
+            "package_cost": 199
+          },
+          {
+            "ri_id": "2027",
+            "name": "thyme leaves",
+            "proportion": 1.282,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "1033",
+            "name": "parmesan reggiano",
+            "proportion": 1.2,
+            "package_cost": 899
+          },
+          {
+            "ri_id": "10016049",
+            "name": "kidney beans",
+            "proportion": 0.06452,
+            "package_cost": 89
+          },
+          {
+            "ri_id": "11477",
+            "name": "summer squash",
+            "proportion": 0.09091,
+            "package_cost": 149
+          }
+        ]
+      },
+      {
+        "r_id": "654318",
+        "ingredients": [
+          {
+            "ri_id": "20420",
+            "name": "precooked vegetable noodles",
+            "proportion": 1.0,
+            "package_cost": 400
+          },
+          {
+            "ri_id": "11090",
+            "name": "broccoli florets",
+            "proportion": 0.0625,
+            "package_cost": 649
+          },
+          {
+            "ri_id": "11282",
+            "name": "onion",
+            "proportion": 0.0833,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "1123",
+            "name": "egg",
+            "proportion": 0.25,
+            "package_cost": 499
+          },
+          {
+            "ri_id": "10016213",
+            "name": "tofu",
+            "proportion": 0.5714,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "6176",
+            "name": "butter lettuce",
+            "proportion": 1.0,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "99166",
+            "name": "kidney beans",
+            "proportion": 0.129,
+            "package_cost": 89
+          },
+          {
+            "ri_id": "16124",
+            "name": "soy sauce",
+            "proportion": 0.15,
+            "package_cost": 149
+          },
+          {
+            "ri_id": "2053",
+            "name": "wine vinegar",
+            "proportion": 0.0625,
+            "package_cost": 329
+          },
+          {
+            "ri_id": "11821",
+            "name": "bell pepper",
+            "proportion": 1.0,
+            "package_cost": 99
+          },
+          {
+            "ri_id": "11951",
+            "name": "bell pepper",
+            "proportion": 1.0,
+            "package_cost": 99
+          },
+          {
+            "ri_id": "11124",
+            "name": "capers",
+            "proportion": 0.2857,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "10211215",
+            "name": "garlic",
+            "proportion": 1.0,
+            "package_cost": 68
+          },
+          {
+            "ri_id": "1016168",
+            "name": "spinach",
+            "proportion": 0.1,
+            "package_cost": 229
+          }
+        ]
+      },
+      {
+        "r_id": "638236",
+        "ingredients": [
+          {
+            "ri_id": "10320420",
+            "name": "ziti pasta",
+            "proportion": 0.75,
+            "package_cost": 189
+          },
+          {
+            "ri_id": "5062",
+            "name": "chicken stock",
+            "proportion": 0.09375,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "10111529",
+            "name": "canned tomatoes",
+            "proportion": 0.06896551724,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "11291",
+            "name": "onion",
+            "proportion": null,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "11011",
+            "name": "asparagus spears",
+            "proportion": 0.1,
+            "package_cost": 419
+          },
+          {
+            "ri_id": "1032009",
+            "name": "pepper flakes",
+            "proportion": 0.07142857143,
+            "package_cost": 269
+          },
+          {
+            "ri_id": "2044",
+            "name": "basil",
+            "proportion": 2.0,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "11215",
+            "name": "garlic",
+            "proportion": null,
+            "package_cost": 68
+          },
+          {
+            "ri_id": "1053",
+            "name": "single cream",
+            "proportion": null,
+            "package_cost": 639
+          },
+          {
+            "ri_id": "9152",
+            "name": "lemon juice",
+            "proportion": null,
+            "package_cost": 169
+          },
+          {
+            "ri_id": "9156",
+            "name": "lemon juice",
+            "proportion": null,
+            "package_cost": 169
+          },
+          {
+            "ri_id": "1033",
+            "name": "parmesan reggiano",
+            "proportion": 0.1,
+            "package_cost": 899
+          },
+          {
+            "ri_id": "10211821",
+            "name": "bell pepper",
+            "proportion": null,
+            "package_cost": 99
+          },
+          {
+            "ri_id": "11951",
+            "name": "bell pepper",
+            "proportion": null,
+            "package_cost": 99
+          }
+        ]
+      },
+      {
+        "r_id": "638272",
+        "ingredients": [
+          {
+            "ri_id": "11220420",
+            "name": "rigatoni",
+            "proportion": 0.625,
+            "package_cost": 125
+          },
+          {
+            "ri_id": "5062",
+            "name": "chicken stock",
+            "proportion": 0.46875,
+            "package_cost": 279
+          },
+          {
+            "ri_id": "11282",
+            "name": "onion",
+            "proportion": 1.0,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "11529",
+            "name": "canned tomatoes",
+            "proportion": 1.7931,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "11124",
+            "name": "capers",
+            "proportion": null,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "11266",
+            "name": "baby bella mushrooms",
+            "proportion": 0.625,
+            "package_cost": 249
+          },
+          {
+            "ri_id": "2004",
+            "name": "add 1 teaspoon bay",
+            "proportion": null,
+            "package_cost": 400
+          },
+          {
+            "ri_id": "2027",
+            "name": "thyme leaves",
+            "proportion": 1.282,
+            "package_cost": 349
+          },
+          {
+            "ri_id": "10211215",
+            "name": "garlic",
+            "proportion": null,
+            "package_cost": 68
+          },
+          {
+            "ri_id": "14057",
+            "name": "parsley",
+            "proportion": null,
+            "package_cost": 199
+          },
+          {
+            "ri_id": "14106",
+            "name": "white wine",
+            "proportion": 0.0667,
+            "package_cost": 1648
+          },
+          {
+            "ri_id": "10011549",
+            "name": "spaghetti",
+            "proportion": 1.75,
+            "package_cost": 125
+          },
+          {
+            "ri_id": "1033",
+            "name": "parmesan reggiano",
+            "proportion": 0.1,
+            "package_cost": 899
+          },
+          {
+            "ri_id": "2044",
+            "name": "basil",
+            "proportion": null,
+            "package_cost": 279
+          }
+        ]
+      },
+      {
+        "r_id": "1697647",
+        "ingredients": [
+          {
+            "ri_id": "10120499",
+            "name": "elbow macaroni",
+            "proportion": 0.625,
+            "package_cost": 125
+          },
+          {
+            "ri_id": "10311529",
+            "name": "canned tomatoes",
+            "proportion": 0.517,
+            "package_cost": 100
+          },
+          {
+            "ri_id": "1129",
+            "name": "hardboiled eggs",
+            "proportion": 0.333,
+            "package_cost": 359
+          },
+          {
+            "ri_id": "11291",
+            "name": "onion",
+            "proportion": 0.125,
+            "package_cost": 159
+          },
+          {
+            "ri_id": "4025",
+            "name": "mayonnaise",
+            "proportion": 0.1,
+            "package_cost": 399
+          },
+          {
+            "ri_id": "1001256",
+            "name": "greek yogurt",
+            "proportion": 0.047,
+            "package_cost": 429
+          },
+          {
+            "ri_id": "1032046",
+            "name": "dijon mustard",
+            "proportion": 0.0083,
+            "package_cost": 179
+          },
+          {
+            "ri_id": "2048",
+            "name": "wine vinegar",
+            "proportion": 0.00625,
+            "package_cost": 329
+          },
+          {
+            "ri_id": "1029195",
+            "name": "ni\u00e7oise olives",
+            "proportion": 0.222,
+            "package_cost": 399
+          },
+          {
+            "ri_id": "10310123",
+            "name": "elbow macaroni",
+            "proportion": null,
+            "package_cost": 125
+          },
+          {
+            "ri_id": "1019",
+            "name": "m zarella cheese",
+            "proportion": 0.75,
+            "package_cost": 379
+          },
+          {
+            "ri_id": "11206",
+            "name": "cucumber",
+            "proportion": null,
+            "package_cost": 79
+          },
+          {
+            "ri_id": "11821",
+            "name": "bell pepper",
+            "proportion": null,
+            "package_cost": 99
+          },
+          {
+            "ri_id": "9037",
+            "name": "avocado",
+            "proportion": null,
+            "package_cost": 125
+          },
+          {
+            "ri_id": "2044",
+            "name": "basil",
+            "proportion": null,
+            "package_cost": 279
+          }
+        ]
+      }
+    ]
+  }
+}

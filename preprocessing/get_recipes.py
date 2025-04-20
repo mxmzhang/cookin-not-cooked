@@ -5,9 +5,9 @@ import os
 API_KEY = 'c85a5e59b51d495392a990aee126e526'
 BASE_URL = 'https://api.spoonacular.com'
 
-my_ingredients = ['broccoli', 'shrimp', 'rice', 'egg']
+my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
 
-def search_recipes_by_ingredients(ingredients, number = 1, min_used=2):
+def search_recipes_by_ingredients(ingredients, number = 1, min_used=4):
     params = {
         'apiKey': API_KEY,
         'ingredients': ",".join(ingredients),
