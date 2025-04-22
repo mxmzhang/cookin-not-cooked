@@ -13,7 +13,7 @@
           {
             "ri_id": "98849",
             "name": "canned tomatoes",
-            "proportion": 0.6552,
+            "proportion": 0.1034,
             "package_cost": 100
           },
           {
@@ -26,7 +26,7 @@
             "ri_id": "11282",
             "name": "onion",
             "proportion": 0.0039,
-            "package_cost": 159
+            "package_cost": 99
           },
           {
             "ri_id": "10011693",
@@ -55,14 +55,14 @@
           {
             "ri_id": "11215",
             "name": "garlic",
-            "proportion": 0.01,
+            "proportion": 2.0,
             "package_cost": 68
           },
           {
             "ri_id": "23557",
             "name": "ground beef i like",
             "proportion": 1.0,
-            "package_cost": 649
+            "package_cost": 400
           },
           {
             "ri_id": "7036",
@@ -73,8 +73,8 @@
           {
             "ri_id": "1022027",
             "name": "onion",
-            "proportion": 0.0039,
-            "package_cost": 159
+            "proportion": 0.0079,
+            "package_cost": 99
           },
           {
             "ri_id": "1041009",
@@ -102,7 +102,7 @@
           {
             "ri_id": "11677",
             "name": "shallot",
-            "proportion": 0.00227,
+            "proportion": 0.0069,
             "package_cost": 499
           },
           {
@@ -114,31 +114,31 @@
           {
             "ri_id": "10011355",
             "name": "canned tomatoes",
-            "proportion": 0.6897,
+            "proportion": 0.69,
             "package_cost": 100
           },
           {
             "ri_id": "11529",
             "name": "canned tomatoes",
-            "proportion": 0.2069,
+            "proportion": 0.21,
             "package_cost": 100
           },
           {
             "ri_id": "10011282",
             "name": "onion",
-            "proportion": 0.00227,
-            "package_cost": 159
+            "proportion": 0.0069,
+            "package_cost": 99
           },
           {
             "ri_id": "9152",
             "name": "lemon juice",
-            "proportion": 0.0333,
+            "proportion": 0.033,
             "package_cost": 169
           },
           {
             "ri_id": "1012049",
             "name": "thyme leaves",
-            "proportion": 0.1282,
+            "proportion": 0.128,
             "package_cost": 349
           },
           {
@@ -150,43 +150,43 @@
           {
             "ri_id": "2027",
             "name": "thyme leaves",
-            "proportion": 0.0256,
+            "proportion": 0.026,
             "package_cost": 349
           },
           {
             "ri_id": "1032046",
             "name": "dijon mustard",
-            "proportion": 0.00833,
+            "proportion": 0.0083,
             "package_cost": 179
           },
           {
             "ri_id": "15117",
             "name": "grilledwise tuna steaks",
-            "proportion": 1.0,
-            "package_cost": 400
+            "proportion": 2.0,
+            "package_cost": 700
           },
           {
             "ri_id": "11250",
             "name": "butter lettuce",
-            "proportion": 0.5,
+            "proportion": 2.0,
             "package_cost": 349
           },
           {
             "ri_id": "11052",
             "name": "grilledwise tuna steaks",
             "proportion": 1.0,
-            "package_cost": 400
+            "package_cost": 700
           },
           {
             "ri_id": "9195",
             "name": "ni\u00e7oise olives",
-            "proportion": 0.0417,
+            "proportion": 0.042,
             "package_cost": 399
           },
           {
             "ri_id": "15001",
             "name": "capers",
-            "proportion": 0.0571,
+            "proportion": 0.57,
             "package_cost": 349
           }
         ]
@@ -198,7 +198,7 @@
             "ri_id": "11294",
             "name": "onion",
             "proportion": 0.25,
-            "package_cost": 159
+            "package_cost": 99
           },
           {
             "ri_id": "10011355",
@@ -282,7 +282,7 @@
             "ri_id": "2015",
             "name": "madras curry powder",
             "proportion": null,
-            "package_cost": 399
+            "package_cost": 400
           },
           {
             "ri_id": "2028",
@@ -298,26 +298,26 @@
           {
             "ri_id": "10011090",
             "name": "broccoli florets",
-            "proportion": 0.234,
-            "package_cost": 649
+            "proportion": 0.26,
+            "package_cost": 329
           },
           {
             "ri_id": "11529",
             "name": "canned tomatoes",
-            "proportion": 0.276,
+            "proportion": 0.27,
             "package_cost": 100
           },
           {
             "ri_id": "11291",
             "name": "onion",
-            "proportion": 0.007,
-            "package_cost": 159
+            "proportion": 0.02,
+            "package_cost": 99
           },
           {
             "ri_id": "11282",
             "name": "onion",
-            "proportion": 0.003,
-            "package_cost": 159
+            "proportion": 0.007,
+            "package_cost": 99
           },
           {
             "ri_id": "1123",
@@ -328,61 +328,61 @@
           {
             "ri_id": "15076",
             "name": "alaska salmon",
-            "proportion": 0.777,
+            "proportion": 0.73,
             "package_cost": 1099
           },
           {
             "ri_id": "10018338",
             "name": "ready-made shortcrust pastry",
-            "proportion": 1.0,
-            "package_cost": 400
+            "proportion": 0.78,
+            "package_cost": 699
           },
           {
             "ri_id": "11011",
             "name": "asparagus spears",
-            "proportion": 0.75,
+            "proportion": 0.34,
             "package_cost": 419
           },
           {
             "ri_id": "11246",
             "name": "leek",
-            "proportion": 0.007,
+            "proportion": 0.009,
             "package_cost": 349
           },
           {
             "ri_id": "15077",
             "name": "shallot",
-            "proportion": 0.046,
+            "proportion": 0.02,
             "package_cost": 499
           },
           {
             "ri_id": "1059195",
             "name": "ni\u00e7oise olives",
-            "proportion": 0.133,
+            "proportion": 0.24,
             "package_cost": 399
           },
           {
             "ri_id": "1021004",
             "name": "m zarella cheese",
-            "proportion": 0.625,
+            "proportion": 0.27,
             "package_cost": 379
           },
           {
             "ri_id": "1009",
             "name": "m zarella cheese",
-            "proportion": 0.625,
+            "proportion": 0.27,
             "package_cost": 379
           },
           {
             "ri_id": "1026",
             "name": "m zarella cheese",
-            "proportion": 0.938,
+            "proportion": 0.4,
             "package_cost": 379
           },
           {
             "ri_id": "1019",
             "name": "m zarella cheese",
-            "proportion": 0.625,
+            "proportion": 0.27,
             "package_cost": 379
           },
           {
@@ -394,7 +394,7 @@
           {
             "ri_id": "1077",
             "name": "milk",
-            "proportion": 0.017,
+            "proportion": 0.018,
             "package_cost": 259
           },
           {
@@ -447,7 +447,7 @@
           {
             "ri_id": "2044",
             "name": "basil",
-            "proportion": 0.04,
+            "proportion": 0.4,
             "package_cost": 279
           },
           {
@@ -464,20 +464,20 @@
           {
             "ri_id": "10011090",
             "name": "broccoli florets",
-            "proportion": 0.015625,
-            "package_cost": 649
+            "proportion": 0.4166666666666667,
+            "package_cost": 329
           },
           {
             "ri_id": "5062",
             "name": "chicken stock",
-            "proportion": 0.03125,
+            "proportion": 0.3125,
             "package_cost": 279
           },
           {
             "ri_id": "11282",
             "name": "onion",
-            "proportion": 0.022727,
-            "package_cost": 159
+            "proportion": 0.25,
+            "package_cost": 99
           },
           {
             "ri_id": "20114",
@@ -488,7 +488,7 @@
           {
             "ri_id": "10111962",
             "name": "pepper flakes",
-            "proportion": 0.028571,
+            "proportion": 0.02857142857142857,
             "package_cost": 269
           },
           {
@@ -506,13 +506,13 @@
           {
             "ri_id": "6175",
             "name": "lemon juice",
-            "proportion": 0.005208,
+            "proportion": 0.010416666666666666,
             "package_cost": 169
           },
           {
             "ri_id": "16124",
             "name": "soy sauce",
-            "proportion": 0.0125,
+            "proportion": 0.125,
             "package_cost": 149
           }
         ]
@@ -523,8 +523,8 @@
           {
             "ri_id": "11090",
             "name": "broccoli florets",
-            "proportion": 0.03125,
-            "package_cost": 649
+            "proportion": 0.0833,
+            "package_cost": 329
           },
           {
             "ri_id": "1123",
@@ -536,7 +536,7 @@
             "ri_id": "11291",
             "name": "onion",
             "proportion": null,
-            "package_cost": 159
+            "package_cost": 99
           },
           {
             "ri_id": "11529",
@@ -572,7 +572,7 @@
             "ri_id": "1159",
             "name": "laura chenel's chabis goat cheese",
             "proportion": 1.0,
-            "package_cost": 799
+            "package_cost": 400
           },
           {
             "ri_id": "11641",
@@ -595,7 +595,7 @@
             "ri_id": "10011284",
             "name": "onion",
             "proportion": 0.002272727272727273,
-            "package_cost": 159
+            "package_cost": 99
           },
           {
             "ri_id": "10011355",
@@ -612,14 +612,14 @@
           {
             "ri_id": "2044",
             "name": "basil",
-            "proportion": 4.0,
+            "proportion": 0.04,
             "package_cost": 279
           },
           {
             "ri_id": "1159",
             "name": "laura chenel's chabis goat cheese",
             "proportion": 1.0,
-            "package_cost": 799
+            "package_cost": 400
           },
           {
             "ri_id": "11333",
@@ -630,8 +630,8 @@
           {
             "ri_id": "10023572",
             "name": "ground beef i like",
-            "proportion": 1.5,
-            "package_cost": 649
+            "proportion": 1.0,
+            "package_cost": 400
           },
           {
             "ri_id": "2023",
@@ -653,50 +653,50 @@
           {
             "ri_id": "10311529",
             "name": "canned tomatoes",
-            "proportion": 0.41379,
+            "proportion": 0.41,
             "package_cost": 100
           },
           {
             "ri_id": "1123",
             "name": "egg",
-            "proportion": 0.33333,
+            "proportion": 0.33,
             "package_cost": 499
           },
           {
             "ri_id": "11282",
             "name": "onion",
-            "proportion": null,
-            "package_cost": 159
+            "proportion": 0.07,
+            "package_cost": 99
           },
           {
             "ri_id": "11352",
             "name": "canned tomatoes",
-            "proportion": 0.13793,
+            "proportion": 0.14,
             "package_cost": 100
           },
           {
             "ri_id": "15001",
             "name": "capers",
-            "proportion": 0.57143,
+            "proportion": 1.71,
             "package_cost": 349
           },
           {
             "ri_id": "2054",
             "name": "capers as you like",
-            "proportion": 1.0,
+            "proportion": 1.71,
             "package_cost": 349
           },
           {
             "ri_id": "1032046",
             "name": "dijon mustard",
-            "proportion": 0.08333,
+            "proportion": 0.08,
             "package_cost": 179
           },
           {
             "ri_id": "11052",
             "name": "grilledwise tuna steaks",
-            "proportion": 1.0,
-            "package_cost": 400
+            "proportion": 0.19,
+            "package_cost": 700
           },
           {
             "ri_id": "9195",
@@ -707,13 +707,13 @@
           {
             "ri_id": "2068",
             "name": "wine vinegar",
-            "proportion": 0.125,
-            "package_cost": 329
+            "proportion": 0.16,
+            "package_cost": 279
           },
           {
             "ri_id": "11821",
             "name": "bell pepper",
-            "proportion": null,
+            "proportion": 1.0,
             "package_cost": 99
           }
         ]
@@ -736,8 +736,8 @@
           {
             "ri_id": "11282",
             "name": "onion",
-            "proportion": 0.0069,
-            "package_cost": 159
+            "proportion": 0.0625,
+            "package_cost": 99
           },
           {
             "ri_id": "10011693",
@@ -760,8 +760,8 @@
           {
             "ri_id": "10023572",
             "name": "ground beef i like",
-            "proportion": 1.5,
-            "package_cost": 649
+            "proportion": 1.0,
+            "package_cost": 400
           },
           {
             "ri_id": "2027",
@@ -807,8 +807,8 @@
           {
             "ri_id": "10611282",
             "name": "onion",
-            "proportion": 0.09091,
-            "package_cost": 159
+            "proportion": 0.0045,
+            "package_cost": 99
           },
           {
             "ri_id": "10111362",
@@ -831,7 +831,7 @@
           {
             "ri_id": "2007",
             "name": "celery seed",
-            "proportion": 0.05348,
+            "proportion": 0.05347,
             "package_cost": 349
           },
           {
@@ -855,19 +855,19 @@
           {
             "ri_id": "1033",
             "name": "parmesan reggiano",
-            "proportion": 1.2,
+            "proportion": null,
             "package_cost": 899
           },
           {
             "ri_id": "10016049",
             "name": "kidney beans",
-            "proportion": 0.06452,
+            "proportion": 0.0645,
             "package_cost": 89
           },
           {
             "ri_id": "11477",
             "name": "summer squash",
-            "proportion": 0.09091,
+            "proportion": null,
             "package_cost": 149
           }
         ]
@@ -878,20 +878,20 @@
           {
             "ri_id": "20420",
             "name": "precooked vegetable noodles",
-            "proportion": 1.0,
-            "package_cost": 400
+            "proportion": 0.4545,
+            "package_cost": 219
           },
           {
             "ri_id": "11090",
             "name": "broccoli florets",
-            "proportion": 0.0625,
-            "package_cost": 649
+            "proportion": 0.1667,
+            "package_cost": 329
           },
           {
             "ri_id": "11282",
             "name": "onion",
-            "proportion": 0.0833,
-            "package_cost": 159
+            "proportion": 0.0227,
+            "package_cost": 99
           },
           {
             "ri_id": "1123",
@@ -908,13 +908,13 @@
           {
             "ri_id": "6176",
             "name": "butter lettuce",
-            "proportion": 1.0,
+            "proportion": 2.0,
             "package_cost": 349
           },
           {
             "ri_id": "99166",
             "name": "kidney beans",
-            "proportion": 0.129,
+            "proportion": 0.0968,
             "package_cost": 89
           },
           {
@@ -926,8 +926,8 @@
           {
             "ri_id": "2053",
             "name": "wine vinegar",
-            "proportion": 0.0625,
-            "package_cost": 329
+            "proportion": 0.0079,
+            "package_cost": 279
           },
           {
             "ri_id": "11821",
@@ -950,7 +950,7 @@
           {
             "ri_id": "10211215",
             "name": "garlic",
-            "proportion": 1.0,
+            "proportion": 4.0,
             "package_cost": 68
           },
           {
@@ -986,7 +986,7 @@
             "ri_id": "11291",
             "name": "onion",
             "proportion": null,
-            "package_cost": 159
+            "package_cost": 99
           },
           {
             "ri_id": "11011",
@@ -1069,7 +1069,7 @@
             "ri_id": "11282",
             "name": "onion",
             "proportion": 1.0,
-            "package_cost": 159
+            "package_cost": 99
           },
           {
             "ri_id": "11529",
@@ -1151,49 +1151,49 @@
           {
             "ri_id": "10311529",
             "name": "canned tomatoes",
-            "proportion": 0.517,
+            "proportion": 0.51724137931,
             "package_cost": 100
           },
           {
             "ri_id": "1129",
             "name": "hardboiled eggs",
-            "proportion": 0.333,
+            "proportion": 0.333333333333,
             "package_cost": 359
           },
           {
             "ri_id": "11291",
             "name": "onion",
-            "proportion": 0.125,
-            "package_cost": 159
+            "proportion": 0.041666666667,
+            "package_cost": 99
           },
           {
             "ri_id": "4025",
             "name": "mayonnaise",
-            "proportion": 0.1,
+            "proportion": 0.333333333333,
             "package_cost": 399
           },
           {
             "ri_id": "1001256",
             "name": "greek yogurt",
-            "proportion": 0.047,
+            "proportion": 0.15625,
             "package_cost": 429
           },
           {
             "ri_id": "1032046",
             "name": "dijon mustard",
-            "proportion": 0.0083,
+            "proportion": 0.083333333333,
             "package_cost": 179
           },
           {
             "ri_id": "2048",
             "name": "wine vinegar",
-            "proportion": 0.00625,
-            "package_cost": 329
+            "proportion": 0.07874015748,
+            "package_cost": 279
           },
           {
             "ri_id": "1029195",
             "name": "ni\u00e7oise olives",
-            "proportion": 0.222,
+            "proportion": 0.444444444444,
             "package_cost": 399
           },
           {
@@ -1211,25 +1211,25 @@
           {
             "ri_id": "11206",
             "name": "cucumber",
-            "proportion": null,
+            "proportion": 1.5,
             "package_cost": 79
           },
           {
             "ri_id": "11821",
             "name": "bell pepper",
-            "proportion": null,
+            "proportion": 1.0,
             "package_cost": 99
           },
           {
             "ri_id": "9037",
             "name": "avocado",
-            "proportion": null,
+            "proportion": 1.0,
             "package_cost": 125
           },
           {
             "ri_id": "2044",
             "name": "basil",
-            "proportion": null,
+            "proportion": 40.0,
             "package_cost": 279
           }
         ]

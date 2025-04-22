@@ -25,7 +25,7 @@
       {
         "i_id": 3,
         "name": "onion",
-        "unit_price": 159,
+        "unit_price": 99,
         "unit_quantity": 1.0,
         "measurement": "lb"
       },
@@ -53,9 +53,9 @@
       {
         "i_id": 7,
         "name": "ground beef i like",
-        "unit_price": 649,
-        "unit_quantity": 1.0,
-        "measurement": "lb"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 8,
@@ -116,9 +116,9 @@
       {
         "i_id": 16,
         "name": "grilledwise tuna steaks",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 700,
+        "unit_quantity": 8.0,
+        "measurement": "oz"
       },
       {
         "i_id": 17,
@@ -172,9 +172,9 @@
       {
         "i_id": 24,
         "name": "madras curry powder",
-        "unit_price": 399,
-        "unit_quantity": 1.62,
-        "measurement": "oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 25,
@@ -186,8 +186,8 @@
       {
         "i_id": 26,
         "name": "broccoli florets",
-        "unit_price": 649,
-        "unit_quantity": 32.0,
+        "unit_price": 329,
+        "unit_quantity": 12.0,
         "measurement": "oz"
       },
       {
@@ -200,9 +200,9 @@
       {
         "i_id": 28,
         "name": "ready-made shortcrust pastry",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 699,
+        "unit_quantity": 17.3,
+        "measurement": "oz"
       },
       {
         "i_id": 29,
@@ -263,9 +263,9 @@
       {
         "i_id": 37,
         "name": "laura chenel's chabis goat cheese",
-        "unit_price": 799,
-        "unit_quantity": 6.0,
-        "measurement": "oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 38,
@@ -298,8 +298,8 @@
       {
         "i_id": 42,
         "name": "wine vinegar",
-        "unit_price": 329,
-        "unit_quantity": 16.0,
+        "unit_price": 279,
+        "unit_quantity": 12.7,
         "measurement": "fl oz"
       },
       {
@@ -326,9 +326,9 @@
       {
         "i_id": 46,
         "name": "precooked vegetable noodles",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 219,
+        "unit_quantity": 2.0,
+        "measurement": "pk / 4.4 oz"
       },
       {
         "i_id": 47,

@@ -18,7 +18,7 @@
         {
           "ri_id": "98849",
           "name": "canned tomatoes",
-          "proportion": 0.6552,
+          "proportion": 0.1034,
           "unit_price": 100,
           "i_id": 1
         },
@@ -33,7 +33,7 @@
           "ri_id": "11282",
           "name": "onion",
           "proportion": 0.0039,
-          "unit_price": 159,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -67,7 +67,7 @@
         {
           "ri_id": "11215",
           "name": "garlic",
-          "proportion": 0.01,
+          "proportion": 2.0,
           "unit_price": 68,
           "i_id": 6
         },
@@ -75,7 +75,7 @@
           "ri_id": "23557",
           "name": "ground beef i like",
           "proportion": 1.0,
-          "unit_price": 649,
+          "unit_price": 400,
           "i_id": 7
         },
         {
@@ -88,8 +88,8 @@
         {
           "ri_id": "1022027",
           "name": "onion",
-          "proportion": 0.0039,
-          "unit_price": 159,
+          "proportion": 0.0079,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -126,7 +126,7 @@
         {
           "ri_id": "11677",
           "name": "shallot",
-          "proportion": 0.00227,
+          "proportion": 0.0069,
           "unit_price": 499,
           "i_id": 11
         },
@@ -140,35 +140,35 @@
         {
           "ri_id": "10011355",
           "name": "canned tomatoes",
-          "proportion": 0.6897,
+          "proportion": 0.69,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "11529",
           "name": "canned tomatoes",
-          "proportion": 0.2069,
+          "proportion": 0.21,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "10011282",
           "name": "onion",
-          "proportion": 0.00227,
-          "unit_price": 159,
+          "proportion": 0.0069,
+          "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "9152",
           "name": "lemon juice",
-          "proportion": 0.0333,
+          "proportion": 0.033,
           "unit_price": 169,
           "i_id": 13
         },
         {
           "ri_id": "1012049",
           "name": "thyme leaves",
-          "proportion": 0.1282,
+          "proportion": 0.128,
           "unit_price": 349,
           "i_id": 14
         },
@@ -182,28 +182,28 @@
         {
           "ri_id": "2027",
           "name": "thyme leaves",
-          "proportion": 0.0256,
+          "proportion": 0.026,
           "unit_price": 349,
           "i_id": 14
         },
         {
           "ri_id": "1032046",
           "name": "dijon mustard",
-          "proportion": 0.00833,
+          "proportion": 0.0083,
           "unit_price": 179,
           "i_id": 15
         },
         {
           "ri_id": "15117",
           "name": "grilledwise tuna steaks",
-          "proportion": 1.0,
-          "unit_price": 400,
+          "proportion": 2.0,
+          "unit_price": 700,
           "i_id": 16
         },
         {
           "ri_id": "11250",
           "name": "butter lettuce",
-          "proportion": 0.5,
+          "proportion": 2.0,
           "unit_price": 349,
           "i_id": 17
         },
@@ -211,20 +211,20 @@
           "ri_id": "11052",
           "name": "grilledwise tuna steaks",
           "proportion": 1.0,
-          "unit_price": 400,
+          "unit_price": 700,
           "i_id": 16
         },
         {
           "ri_id": "9195",
           "name": "ni\u00e7oise olives",
-          "proportion": 0.0417,
+          "proportion": 0.042,
           "unit_price": 399,
           "i_id": 18
         },
         {
           "ri_id": "15001",
           "name": "capers",
-          "proportion": 0.0571,
+          "proportion": 0.57,
           "unit_price": 349,
           "i_id": 19
         }
@@ -242,7 +242,7 @@
           "ri_id": "11294",
           "name": "onion",
           "proportion": 0.25,
-          "unit_price": 159,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -340,7 +340,7 @@
           "ri_id": "2015",
           "name": "madras curry powder",
           "proportion": 1,
-          "unit_price": 399,
+          "unit_price": 400,
           "i_id": 24
         },
         {
@@ -363,29 +363,29 @@
         {
           "ri_id": "10011090",
           "name": "broccoli florets",
-          "proportion": 0.234,
-          "unit_price": 649,
+          "proportion": 0.26,
+          "unit_price": 329,
           "i_id": 26
         },
         {
           "ri_id": "11529",
           "name": "canned tomatoes",
-          "proportion": 0.276,
+          "proportion": 0.27,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "11291",
           "name": "onion",
-          "proportion": 0.007,
-          "unit_price": 159,
+          "proportion": 0.02,
+          "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.003,
-          "unit_price": 159,
+          "proportion": 0.007,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -398,70 +398,70 @@
         {
           "ri_id": "15076",
           "name": "alaska salmon",
-          "proportion": 0.777,
+          "proportion": 0.73,
           "unit_price": 1099,
           "i_id": 27
         },
         {
           "ri_id": "10018338",
           "name": "ready-made shortcrust pastry",
-          "proportion": 1.0,
-          "unit_price": 400,
+          "proportion": 0.78,
+          "unit_price": 699,
           "i_id": 28
         },
         {
           "ri_id": "11011",
           "name": "asparagus spears",
-          "proportion": 0.75,
+          "proportion": 0.34,
           "unit_price": 419,
           "i_id": 29
         },
         {
           "ri_id": "11246",
           "name": "leek",
-          "proportion": 0.007,
+          "proportion": 0.009,
           "unit_price": 349,
           "i_id": 30
         },
         {
           "ri_id": "15077",
           "name": "shallot",
-          "proportion": 0.046,
+          "proportion": 0.02,
           "unit_price": 499,
           "i_id": 11
         },
         {
           "ri_id": "1059195",
           "name": "ni\u00e7oise olives",
-          "proportion": 0.133,
+          "proportion": 0.24,
           "unit_price": 399,
           "i_id": 18
         },
         {
           "ri_id": "1021004",
           "name": "m zarella cheese",
-          "proportion": 0.625,
+          "proportion": 0.27,
           "unit_price": 379,
           "i_id": 9
         },
         {
           "ri_id": "1009",
           "name": "m zarella cheese",
-          "proportion": 0.625,
+          "proportion": 0.27,
           "unit_price": 379,
           "i_id": 9
         },
         {
           "ri_id": "1026",
           "name": "m zarella cheese",
-          "proportion": 0.938,
+          "proportion": 0.4,
           "unit_price": 379,
           "i_id": 9
         },
         {
           "ri_id": "1019",
           "name": "m zarella cheese",
-          "proportion": 0.625,
+          "proportion": 0.27,
           "unit_price": 379,
           "i_id": 9
         },
@@ -475,7 +475,7 @@
         {
           "ri_id": "1077",
           "name": "milk",
-          "proportion": 0.017,
+          "proportion": 0.018,
           "unit_price": 259,
           "i_id": 31
         },
@@ -541,7 +541,7 @@
         {
           "ri_id": "2044",
           "name": "basil",
-          "proportion": 0.04,
+          "proportion": 0.4,
           "unit_price": 279,
           "i_id": 4
         },
@@ -565,22 +565,22 @@
         {
           "ri_id": "10011090",
           "name": "broccoli florets",
-          "proportion": 0.015625,
-          "unit_price": 649,
+          "proportion": 0.4166666666666667,
+          "unit_price": 329,
           "i_id": 26
         },
         {
           "ri_id": "5062",
           "name": "chicken stock",
-          "proportion": 0.03125,
+          "proportion": 0.3125,
           "unit_price": 279,
           "i_id": 20
         },
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.022727,
-          "unit_price": 159,
+          "proportion": 0.25,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -593,7 +593,7 @@
         {
           "ri_id": "10111962",
           "name": "pepper flakes",
-          "proportion": 0.028571,
+          "proportion": 0.02857142857142857,
           "unit_price": 269,
           "i_id": 23
         },
@@ -614,14 +614,14 @@
         {
           "ri_id": "6175",
           "name": "lemon juice",
-          "proportion": 0.005208,
+          "proportion": 0.010416666666666666,
           "unit_price": 169,
           "i_id": 13
         },
         {
           "ri_id": "16124",
           "name": "soy sauce",
-          "proportion": 0.0125,
+          "proportion": 0.125,
           "unit_price": 149,
           "i_id": 35
         }
@@ -638,8 +638,8 @@
         {
           "ri_id": "11090",
           "name": "broccoli florets",
-          "proportion": 0.03125,
-          "unit_price": 649,
+          "proportion": 0.0833,
+          "unit_price": 329,
           "i_id": 26
         },
         {
@@ -653,7 +653,7 @@
           "ri_id": "11291",
           "name": "onion",
           "proportion": 1,
-          "unit_price": 159,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -695,7 +695,7 @@
           "ri_id": "1159",
           "name": "laura chenel's chabis goat cheese",
           "proportion": 1.0,
-          "unit_price": 799,
+          "unit_price": 400,
           "i_id": 37
         },
         {
@@ -726,7 +726,7 @@
           "ri_id": "10011284",
           "name": "onion",
           "proportion": 0.002272727272727273,
-          "unit_price": 159,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -746,7 +746,7 @@
         {
           "ri_id": "2044",
           "name": "basil",
-          "proportion": 4.0,
+          "proportion": 0.04,
           "unit_price": 279,
           "i_id": 4
         },
@@ -754,7 +754,7 @@
           "ri_id": "1159",
           "name": "laura chenel's chabis goat cheese",
           "proportion": 1.0,
-          "unit_price": 799,
+          "unit_price": 400,
           "i_id": 37
         },
         {
@@ -767,8 +767,8 @@
         {
           "ri_id": "10023572",
           "name": "ground beef i like",
-          "proportion": 1.5,
-          "unit_price": 649,
+          "proportion": 1.0,
+          "unit_price": 400,
           "i_id": 7
         },
         {
@@ -798,57 +798,57 @@
         {
           "ri_id": "10311529",
           "name": "canned tomatoes",
-          "proportion": 0.41379,
+          "proportion": 0.41,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "1123",
           "name": "egg",
-          "proportion": 0.33333,
+          "proportion": 0.33,
           "unit_price": 499,
           "i_id": 0
         },
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 1,
-          "unit_price": 159,
+          "proportion": 0.07,
+          "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "11352",
           "name": "canned tomatoes",
-          "proportion": 0.13793,
+          "proportion": 0.14,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "15001",
           "name": "capers",
-          "proportion": 0.57143,
+          "proportion": 1.71,
           "unit_price": 349,
           "i_id": 19
         },
         {
           "ri_id": "2054",
           "name": "capers as you like",
-          "proportion": 1.0,
+          "proportion": 1.71,
           "unit_price": 349,
           "i_id": 41
         },
         {
           "ri_id": "1032046",
           "name": "dijon mustard",
-          "proportion": 0.08333,
+          "proportion": 0.08,
           "unit_price": 179,
           "i_id": 15
         },
         {
           "ri_id": "11052",
           "name": "grilledwise tuna steaks",
-          "proportion": 1.0,
-          "unit_price": 400,
+          "proportion": 0.19,
+          "unit_price": 700,
           "i_id": 16
         },
         {
@@ -861,14 +861,14 @@
         {
           "ri_id": "2068",
           "name": "wine vinegar",
-          "proportion": 0.125,
-          "unit_price": 329,
+          "proportion": 0.16,
+          "unit_price": 279,
           "i_id": 42
         },
         {
           "ri_id": "11821",
           "name": "bell pepper",
-          "proportion": 1,
+          "proportion": 1.0,
           "unit_price": 99,
           "i_id": 39
         }
@@ -899,8 +899,8 @@
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.0069,
-          "unit_price": 159,
+          "proportion": 0.0625,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -927,8 +927,8 @@
         {
           "ri_id": "10023572",
           "name": "ground beef i like",
-          "proportion": 1.5,
-          "unit_price": 649,
+          "proportion": 1.0,
+          "unit_price": 400,
           "i_id": 7
         },
         {
@@ -986,8 +986,8 @@
         {
           "ri_id": "10611282",
           "name": "onion",
-          "proportion": 0.09091,
-          "unit_price": 159,
+          "proportion": 0.0045,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -1014,7 +1014,7 @@
         {
           "ri_id": "2007",
           "name": "celery seed",
-          "proportion": 0.05348,
+          "proportion": 0.05347,
           "unit_price": 349,
           "i_id": 45
         },
@@ -1042,21 +1042,21 @@
         {
           "ri_id": "1033",
           "name": "parmesan reggiano",
-          "proportion": 1.2,
+          "proportion": 1,
           "unit_price": 899,
           "i_id": 10
         },
         {
           "ri_id": "10016049",
           "name": "kidney beans",
-          "proportion": 0.06452,
+          "proportion": 0.0645,
           "unit_price": 89,
           "i_id": 22
         },
         {
           "ri_id": "11477",
           "name": "summer squash",
-          "proportion": 0.09091,
+          "proportion": 1,
           "unit_price": 149,
           "i_id": 38
         }
@@ -1073,22 +1073,22 @@
         {
           "ri_id": "20420",
           "name": "precooked vegetable noodles",
-          "proportion": 1.0,
-          "unit_price": 400,
+          "proportion": 0.4545,
+          "unit_price": 219,
           "i_id": 46
         },
         {
           "ri_id": "11090",
           "name": "broccoli florets",
-          "proportion": 0.0625,
-          "unit_price": 649,
+          "proportion": 0.1667,
+          "unit_price": 329,
           "i_id": 26
         },
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.0833,
-          "unit_price": 159,
+          "proportion": 0.0227,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -1108,14 +1108,14 @@
         {
           "ri_id": "6176",
           "name": "butter lettuce",
-          "proportion": 1.0,
+          "proportion": 2.0,
           "unit_price": 349,
           "i_id": 17
         },
         {
           "ri_id": "99166",
           "name": "kidney beans",
-          "proportion": 0.129,
+          "proportion": 0.0968,
           "unit_price": 89,
           "i_id": 22
         },
@@ -1129,8 +1129,8 @@
         {
           "ri_id": "2053",
           "name": "wine vinegar",
-          "proportion": 0.0625,
-          "unit_price": 329,
+          "proportion": 0.0079,
+          "unit_price": 279,
           "i_id": 42
         },
         {
@@ -1157,7 +1157,7 @@
         {
           "ri_id": "10211215",
           "name": "garlic",
-          "proportion": 1.0,
+          "proportion": 4.0,
           "unit_price": 68,
           "i_id": 6
         },
@@ -1203,7 +1203,7 @@
           "ri_id": "11291",
           "name": "onion",
           "proportion": 1,
-          "unit_price": 159,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -1304,7 +1304,7 @@
           "ri_id": "11282",
           "name": "onion",
           "proportion": 1.0,
-          "unit_price": 159,
+          "unit_price": 99,
           "i_id": 3
         },
         {
@@ -1404,56 +1404,56 @@
         {
           "ri_id": "10311529",
           "name": "canned tomatoes",
-          "proportion": 0.517,
+          "proportion": 0.51724137931,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "1129",
           "name": "hardboiled eggs",
-          "proportion": 0.333,
+          "proportion": 0.333333333333,
           "unit_price": 359,
           "i_id": 12
         },
         {
           "ri_id": "11291",
           "name": "onion",
-          "proportion": 0.125,
-          "unit_price": 159,
+          "proportion": 0.041666666667,
+          "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "4025",
           "name": "mayonnaise",
-          "proportion": 0.1,
+          "proportion": 0.333333333333,
           "unit_price": 399,
           "i_id": 52
         },
         {
           "ri_id": "1001256",
           "name": "greek yogurt",
-          "proportion": 0.047,
+          "proportion": 0.15625,
           "unit_price": 429,
           "i_id": 53
         },
         {
           "ri_id": "1032046",
           "name": "dijon mustard",
-          "proportion": 0.0083,
+          "proportion": 0.083333333333,
           "unit_price": 179,
           "i_id": 15
         },
         {
           "ri_id": "2048",
           "name": "wine vinegar",
-          "proportion": 0.00625,
-          "unit_price": 329,
+          "proportion": 0.07874015748,
+          "unit_price": 279,
           "i_id": 42
         },
         {
           "ri_id": "1029195",
           "name": "ni\u00e7oise olives",
-          "proportion": 0.222,
+          "proportion": 0.444444444444,
           "unit_price": 399,
           "i_id": 18
         },
@@ -1474,28 +1474,28 @@
         {
           "ri_id": "11206",
           "name": "cucumber",
-          "proportion": 1,
+          "proportion": 1.5,
           "unit_price": 79,
           "i_id": 54
         },
         {
           "ri_id": "11821",
           "name": "bell pepper",
-          "proportion": 1,
+          "proportion": 1.0,
           "unit_price": 99,
           "i_id": 39
         },
         {
           "ri_id": "9037",
           "name": "avocado",
-          "proportion": 1,
+          "proportion": 1.0,
           "unit_price": 125,
           "i_id": 55
         },
         {
           "ri_id": "2044",
           "name": "basil",
-          "proportion": 1,
+          "proportion": 40.0,
           "unit_price": 279,
           "i_id": 4
         }
@@ -1580,7 +1580,7 @@
         "11282",
         "11291"
       ],
-      "unit_price": 159
+      "unit_price": 99
     },
     {
       "i_id": 4,
@@ -1631,7 +1631,7 @@
         "10023572",
         "10023572"
       ],
-      "unit_price": 649
+      "unit_price": 400
     },
     {
       "i_id": 8,
@@ -1731,7 +1731,7 @@
         "11052",
         "11052"
       ],
-      "unit_price": 400
+      "unit_price": 700
     },
     {
       "i_id": 17,
@@ -1815,7 +1815,7 @@
       "recipe_ingredients": [
         "2015"
       ],
-      "unit_price": 399
+      "unit_price": 400
     },
     {
       "i_id": 25,
@@ -1834,7 +1834,7 @@
         "11090",
         "11090"
       ],
-      "unit_price": 649
+      "unit_price": 329
     },
     {
       "i_id": 27,
@@ -1850,7 +1850,7 @@
       "recipe_ingredients": [
         "10018338"
       ],
-      "unit_price": 400
+      "unit_price": 699
     },
     {
       "i_id": 29,
@@ -1930,7 +1930,7 @@
         "1159",
         "1159"
       ],
-      "unit_price": 799
+      "unit_price": 400
     },
     {
       "i_id": 38,
@@ -1979,7 +1979,7 @@
         "2053",
         "2048"
       ],
-      "unit_price": 329
+      "unit_price": 279
     },
     {
       "i_id": 43,
@@ -2013,7 +2013,7 @@
       "recipe_ingredients": [
         "20420"
       ],
-      "unit_price": 400
+      "unit_price": 219
     },
     {
       "i_id": 47,
