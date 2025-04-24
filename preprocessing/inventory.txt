@@ -1,7 +1,1 @@
 broccoli: 2
-pasta: 1
-chicken breast: 1
-onion: 2
-potato: 2
-tomato: 2
-eggs: 1

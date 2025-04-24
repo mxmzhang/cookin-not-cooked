@@ -1,0 +1,15 @@
+{
+  "calorie_cap": "0",
+  "num_recipes": "5",
+  "nutritional_goals": {
+    "Protein": false,
+    "Fat": false,
+    "Carbs": false,
+    "Fiber": false,
+    "Vitamin A": false,
+    "Vitamin C": false,
+    "Vitamin D": false,
+    "Calcium": false,
+    "Iron": false
+  }
+}
