@@ -7,12 +7,14 @@ import json
 def preprocess_inventory(filename, data):
     ingredients = data["all_ingredients"]
     inventory = dict()
+    for ingrli in ingredients:
+        inventory[ingrli["i_id"]] = {"name": ingrli["name"], "amount":0}
     with open(filename, "r") as file:
         for line in file:
-            ingr = line.strip().split(",")
+            ingr = line.strip().split(": ")
             for ingrli in ingredients:
                 if ingr[0] == ingrli["name"]:
-                    inventory[ingrli["i_id"]] = {"name":ingr[0], "amount":float(ingr[1])}
+                    inventory[ingrli["i_id"]]["amount"] = float(ingr[1])
     return inventory
 
 def preprocess_disliked(filename, data):
@@ -23,9 +25,10 @@ def preprocess_disliked(filename, data):
             ingr = line.strip()
             for ingrli in ingredients:
                 if ingr == ingrli["name"]:
-                    disliked[ingrli["i_id"]] = ingrli["name"]
+                    disliked[ingrli["name"]] = ingrli["i_id"]
+    return disliked
 
-def cp(data, budget, calorie_cap, inventory, chosen_meals = 5):
+def cp(data, budget, calorie_cap, inventory, disliked_ct, chosen_meals = 5):
     model = cp_model.CpModel()
     rlen = len(data["recipes"])
     ilen = len(data["all_ingredients"])
@@ -87,6 +90,14 @@ def cp(data, budget, calorie_cap, inventory, chosen_meals = 5):
         model.Add(round(recipes[rid].get("nutrients",{})["calories"]) * x[rid] <= calorie_cap)
 
     # objective function
+    # soft constraint calculations
+    dislike_expr = []
+    for rid in range(rlen):
+        dislike_expr.append(disliked_ct[rid] * x[rid])
+
+    dislike_sum = sum(dislike_expr)
+
+    # protein/calorie variables
     total_protein = model.NewIntVar(0, 10000000, "total_protein")
     model.Add(total_protein == sum(round(recipes[rid].get("nutrients", {})["protein"]) * x[rid] for rid in range(rlen)))
 
@@ -96,7 +107,7 @@ def cp(data, budget, calorie_cap, inventory, chosen_meals = 5):
     obj_expr = model.NewIntVar(-100000000, 100000000, "obj_expr")
 
     # make sure units of things in objective function are scaled the same
-    model.Add(obj_expr == (6*total_protein - total_calories)) # test/experiment with objective functions
+    model.Add(obj_expr == (6*total_protein - total_calories - 100 * dislike_sum)) # test/experiment with objective functions
     model.Maximize(obj_expr)
 
     solver = cp_model.CpSolver()
@@ -141,16 +152,26 @@ def main():
         with open(mainfile, 'r') as file:
             data = json.load(file)
         inventory = preprocess_inventory(inventoryfile, data)
+        disliked = preprocess_disliked(dislikedfile, data)
+        recipes = data.get("recipes", [])
+        disliked_ct = []
+        for recipe in recipes:
+            count = 0
+            for ing in recipe["ingredients"]:
+                if ing["name"] in disliked:
+                    count += 1
+            disliked_ct.append(count)
+
     except FileNotFoundError:
-        print(f"Error: File not found at '{file}'")
+        print(f"Error: File not found")
         return
     except json.JSONDecodeError:
-        print(f"Error: Invalid JSON format in '{file}'")
+        print(f"Error: Invalid JSON format in")
         return
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return
-    cp(data, 200, 460)
+    cp(data, 200, 460, inventory, disliked_ct, 2)
 
 if __name__ == '__main__':
     main()
