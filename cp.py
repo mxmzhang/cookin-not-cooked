@@ -161,6 +161,15 @@ def main():
                 if ing["name"] in disliked:
                     count += 1
             disliked_ct.append(count)
+        with open(capfile, 'r') as file2:
+            for line in file2:
+                line = line.strip()
+                info = line.split(",")
+                break
+        calorie_cap = int(info[0])
+        recipe_num = int(info[1])
+        budget = int(info[2])
+        # print(calorie_cap, recipe_num, budget)
 
     except FileNotFoundError:
         print(f"Error: File not found")
@@ -171,7 +180,7 @@ def main():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return
-    cp(data, 200, 460, inventory, disliked_ct, 2)
+    cp(data, budget, calorie_cap, inventory, disliked_ct, recipe_num)
 
 if __name__ == '__main__':
     main()
