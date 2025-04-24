@@ -4,51 +4,31 @@ from typing import List
 import numpy as np
 import json
 
-# assume that we have a list of recipes from spoonacular called recipes, a 2D matrix
-def process_recipes(recipes):
-    ingredient_dict = {}
-    protein_list = []
-    calories_list = []
-    ingredient_index = 0
+def preprocess_inventory(filename, data):
+    ingredients = data["all_ingredients"]
+    inventory = dict()
+    for ingrli in ingredients:
+        inventory[ingrli["i_id"]] = {"name": ingrli["name"], "amount":0}
+    with open(filename, "r") as file:
+        for line in file:
+            ingr = line.strip().split(": ")
+            for ingrli in ingredients:
+                if ingr[0] == ingrli["name"]:
+                    inventory[ingrli["i_id"]]["amount"] = float(ingr[1])
+    return inventory
 
-    for recipe in recipes:
+def preprocess_disliked(filename, data):
+    ingredients = data["all_ingredients"]
+    disliked = dict()
+    with open(filename, 'r') as file:
+        for line in file:
+            ingr = line.strip()
+            for ingrli in ingredients:
+                if ingr == ingrli["name"]:
+                    disliked[ingrli["name"]] = ingrli["i_id"]
+    return disliked
 
-        for ingredient in recipe.get("extendedIngredients", []):
-            name = ingredient.get("nameClean")
-            if name and name not in ingredient_dict:
-                ingredient_dict[name] = ingredient_index
-                ingredient_index += 1
-
-        protein = 0
-        calories = 0
-        for nutrient in recipe.get("nutrition", {}).get("nutrients", []):
-            name = nutrient.get("name", "").lower()
-            if name == "protein":
-                protein += nutrient.get("amount", 0)
-            elif name == "calories":
-                calories += nutrient.get("amount", 0)
-
-        protein_list.append(protein)
-        calories_list.append(calories)
-
-    num_recipes = len(recipes)
-    num_ingredients = len(ingredient_dict)
-    
-    ingredient_matrix = np.zeros((num_recipes, num_ingredients))
-
-    for i, recipe in enumerate(recipes):
-        for ingredient in recipe.get("extendedIngredients", []):
-            name = ingredient.get("nameClean")
-            index = ingredient_dict.get(name)
-
-            amount_in_grams = ingredient.get("measures", {}).get("metric", {}).get("amount", 0)
-            if index is not None:
-                ingredient_matrix[i, index] = amount_in_grams
-
-
-    return ingredient_dict, protein_list, calories_list, ingredient_matrix
-
-def cp(data, budget, calorie_cap, chosen_meals = 5):
+def cp(data, budget, calorie_cap, inventory, disliked_ct, chosen_meals = 5):
     model = cp_model.CpModel()
     rlen = len(data["recipes"])
     ilen = len(data["all_ingredients"])
@@ -74,9 +54,8 @@ def cp(data, budget, calorie_cap, chosen_meals = 5):
 
     # sum of usage for each ingredient i across chosen recipes <= inventory + b[i]
 
-    # inventory = data.get("inventory", {})
     for i in range(ilen):
-        # inv_i = inventory.get(i, 0)
+        inv_i = inventory[i]["amount"]
         # print("ing id:", i)
         usage_expr = []
         for rid in range(rlen):
@@ -97,8 +76,8 @@ def cp(data, budget, calorie_cap, chosen_meals = 5):
             #             break
             # usage_expr.append(needed * x[rid])
 
-        # model.Add(sum(usage_expr) <= inv_i + b[i])
-        model.Add(sum(usage_expr) <= b[i])
+        model.Add(sum(usage_expr) <= int(inv_i*100) + b[i])
+        # model.Add(sum(usage_expr) <= b[i])
 
     # sum of cost of purchased ingredients <= budget
     cost_expr = []
@@ -111,6 +90,14 @@ def cp(data, budget, calorie_cap, chosen_meals = 5):
         model.Add(round(recipes[rid].get("nutrients",{})["calories"]) * x[rid] <= calorie_cap)
 
     # objective function
+    # soft constraint calculations
+    dislike_expr = []
+    for rid in range(rlen):
+        dislike_expr.append(disliked_ct[rid] * x[rid])
+
+    dislike_sum = sum(dislike_expr)
+
+    # protein/calorie variables
     total_protein = model.NewIntVar(0, 10000000, "total_protein")
     model.Add(total_protein == sum(round(recipes[rid].get("nutrients", {})["protein"]) * x[rid] for rid in range(rlen)))
 
@@ -120,7 +107,7 @@ def cp(data, budget, calorie_cap, chosen_meals = 5):
     obj_expr = model.NewIntVar(-100000000, 100000000, "obj_expr")
 
     # make sure units of things in objective function are scaled the same
-    model.Add(obj_expr == (6*total_protein - total_calories)) # test/experiment with objective functions
+    model.Add(obj_expr == (6*total_protein - total_calories - 100 * dislike_sum)) # test/experiment with objective functions
     model.Maximize(obj_expr)
 
     solver = cp_model.CpSolver()
@@ -157,21 +144,34 @@ def cp(data, budget, calorie_cap, chosen_meals = 5):
         print("No feasible solution found.")
 
 def main():
-    file = "preprocessing/combined_recipe_data.json"
+    mainfile = "preprocessing/combined_recipe_data.json"
+    inventoryfile = "preprocessing/inventory.txt"
+    dislikedfile = "preprocessing/disliked.txt"
+    capfile = "preprocessing/cap.txt"
     try:
-        with open(file, 'r') as file:
+        with open(mainfile, 'r') as file:
             data = json.load(file)
+        inventory = preprocess_inventory(inventoryfile, data)
+        disliked = preprocess_disliked(dislikedfile, data)
+        recipes = data.get("recipes", [])
+        disliked_ct = []
+        for recipe in recipes:
+            count = 0
+            for ing in recipe["ingredients"]:
+                if ing["name"] in disliked:
+                    count += 1
+            disliked_ct.append(count)
+
     except FileNotFoundError:
-        print(f"Error: File not found at '{file}'")
+        print(f"Error: File not found")
         return
     except json.JSONDecodeError:
-        print(f"Error: Invalid JSON format in '{file}'")
+        print(f"Error: Invalid JSON format in")
         return
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return
-    
-    cp(data, 200, 460)
+    cp(data, 200, 460, inventory, disliked_ct, 2)
 
 if __name__ == '__main__':
     main()
