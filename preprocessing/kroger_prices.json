@@ -4,7 +4,7 @@
       {
         "i_id": 0,
         "name": "egg",
-        "unit_price": 499,
+        "unit_price": 449,
         "unit_quantity": 12.0,
         "measurement": "ct"
       },
@@ -53,14 +53,14 @@
       {
         "i_id": 7,
         "name": "ground beef i like",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 649,
+        "unit_quantity": 1.0,
+        "measurement": "lb"
       },
       {
         "i_id": 8,
         "name": "sausage",
-        "unit_price": 549,
+        "unit_price": 349,
         "unit_quantity": 16.0,
         "measurement": "oz"
       },
@@ -102,8 +102,8 @@
       {
         "i_id": 14,
         "name": "thyme leaves",
-        "unit_price": 349,
-        "unit_quantity": 0.78,
+        "unit_price": 249,
+        "unit_quantity": 0.5,
         "measurement": "oz"
       },
       {
@@ -116,9 +116,9 @@
       {
         "i_id": 16,
         "name": "grilledwise tuna steaks",
-        "unit_price": 700,
-        "unit_quantity": 8.0,
-        "measurement": "oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 17,
@@ -200,9 +200,9 @@
       {
         "i_id": 28,
         "name": "ready-made shortcrust pastry",
-        "unit_price": 699,
-        "unit_quantity": 17.3,
-        "measurement": "oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 29,
@@ -222,8 +222,8 @@
         "i_id": 31,
         "name": "milk",
         "unit_price": 259,
-        "unit_quantity": 1.0,
-        "measurement": "gal"
+        "unit_quantity": 1,
+        "measurement": "1/2 gal"
       },
       {
         "i_id": 32,
@@ -263,9 +263,9 @@
       {
         "i_id": 37,
         "name": "laura chenel's chabis goat cheese",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 799,
+        "unit_quantity": 6.0,
+        "measurement": "oz"
       },
       {
         "i_id": 38,
@@ -291,15 +291,15 @@
       {
         "i_id": 41,
         "name": "capers as you like",
-        "unit_price": 349,
-        "unit_quantity": 3.5,
-        "measurement": "fl oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 42,
         "name": "wine vinegar",
-        "unit_price": 279,
-        "unit_quantity": 12.7,
+        "unit_price": 329,
+        "unit_quantity": 16.0,
         "measurement": "fl oz"
       },
       {
@@ -347,7 +347,7 @@
       {
         "i_id": 49,
         "name": "baby bella mushrooms",
-        "unit_price": 249,
+        "unit_price": 279,
         "unit_quantity": 8.0,
         "measurement": "oz"
       },
@@ -382,7 +382,7 @@
       {
         "i_id": 54,
         "name": "cucumber",
-        "unit_price": 79,
+        "unit_price": 89,
         "unit_quantity": 1.0,
         "measurement": "ct"
       },

@@ -5,6 +5,7 @@
       "name": "How to make the World\u2019s Greatest Lasagna Roll Ups",
       "nutrients": {
         "calories": 424.14,
+        "cholesterol": 61.13,
         "protein": 22.06
       }
     },
@@ -13,6 +14,7 @@
       "name": "Salad Nicoise",
       "nutrients": {
         "calories": 834.51,
+        "cholesterol": 361.72,
         "protein": 114.89
       }
     },
@@ -21,6 +23,7 @@
       "name": "Hearty Minestrone Soup",
       "nutrients": {
         "calories": 3024.16,
+        "cholesterol": 50.53,
         "protein": 153.15
       }
     },
@@ -29,6 +32,7 @@
       "name": "Party Quiches",
       "nutrients": {
         "calories": 1334.57,
+        "cholesterol": 701.97,
         "protein": 70.56
       }
     },
@@ -37,6 +41,7 @@
       "name": "Chicken in a Basil Cream Sauce",
       "nutrients": {
         "calories": 1317.89,
+        "cholesterol": 258.58,
         "protein": 52.98
       }
     },
@@ -45,6 +50,7 @@
       "name": "Zomppa's Chicken and Broccoli Stir-Fry",
       "nutrients": {
         "calories": 327.75,
+        "cholesterol": 36.68,
         "protein": 19.42
       }
     },
@@ -53,6 +59,7 @@
       "name": "Garden Vegetable Ravioli With Tomato Brodo",
       "nutrients": {
         "calories": 349.5,
+        "cholesterol": 81.92,
         "protein": 10.28
       }
     },
@@ -61,6 +68,7 @@
       "name": "Stuffed Breakfast Balls",
       "nutrients": {
         "calories": 638.61,
+        "cholesterol": 156.31,
         "protein": 30.72
       }
     },
@@ -69,6 +77,7 @@
       "name": "Ni\u00e7oise Salad",
       "nutrients": {
         "calories": 300.27,
+        "cholesterol": 111.52,
         "protein": 8.37
       }
     },
@@ -77,6 +86,7 @@
       "name": "Stuffed Giant Sea Shells Or Manicotti",
       "nutrients": {
         "calories": 6332.23,
+        "cholesterol": 1392.92,
         "protein": 390.01
       }
     },
@@ -85,6 +95,7 @@
       "name": "Best Minestrone Soup Recipe",
       "nutrients": {
         "calories": 451.79,
+        "cholesterol": 20.4,
         "protein": 22.88
       }
     },
@@ -93,6 +104,7 @@
       "name": "Pad Se Ew Tofu With Vegetable Noodles",
       "nutrients": {
         "calories": 582.74,
+        "cholesterol": 81.84,
         "protein": 23.64
       }
     },
@@ -101,6 +113,7 @@
       "name": "Chicken Pasta Primavera - Flower Patch Farmgirl Style",
       "nutrients": {
         "calories": 426.91,
+        "cholesterol": 75.3,
         "protein": 29.16
       }
     },
@@ -109,6 +122,7 @@
       "name": "Chicken Ragu w Rigatoni",
       "nutrients": {
         "calories": 605.07,
+        "cholesterol": 78.24,
         "protein": 40.05
       }
     },
@@ -117,6 +131,7 @@
       "name": "Loaded Macaroni Salad",
       "nutrients": {
         "calories": 334.56,
+        "cholesterol": 47.88,
         "protein": 9.17
       }
     }

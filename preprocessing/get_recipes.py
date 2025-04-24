@@ -2,8 +2,9 @@ import requests
 import json
 import os 
 
-API_KEY = 'c85a5e59b51d495392a990aee126e526'
+API_KEY = '2add8db43662436abe6dc85a5ae84a30'
 BASE_URL = 'https://api.spoonacular.com'
+'''
 def get_ingredients_with_amounts():
     print("Enter the ingredients you have (name and amount). Type 'done' to finish:")
     ingredients = []
@@ -82,14 +83,18 @@ def save_disliked_ingredients_to_file(disliked_ingredients, filename="disliked.t
             f.write(f"{item}\n")
     print(f"Disliked ingredients saved to {filename}")
 
-
+'''
 
 #my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
-
+my_ingredients = []
+with open("inventory.txt", "r") as f:
+    lines = f.readlines()
+    my_ingredients = [line.split(":")[0].strip() for line in lines]
 def search_recipes_by_ingredients(ingredients, number = 1, min_used=4):
     params = {
         'apiKey': API_KEY,
-        'ingredients': ",".join([ing["name"] for ing in ingredients]),
+        #'ingredients': ",".join([ing["name"] for ing in ingredients]),
+        'ingredients': ",".join(ingredients),
         'number': number,
         'ranking': 1,
         'offset': 3,
@@ -198,18 +203,18 @@ def load_results_from_file(filename):
     except FileNotFoundError:
         print(f"File {filename} not found")
         return None
-    
+
+my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
+ 
 if __name__ == "__main__":
     output_file = "recipe_results.json"
-    get_user_preferences()
-    save_disliked_ingredients_to_file(disliked_ingredients, filename="disliked.txt")
-    save_current_ingredients_to_file(my_ingredients, filename="inventory.txt")
+    #get_user_preferences()
+    #save_disliked_ingredients_to_file(disliked_ingredients, filename="disliked.txt")
+    #save_current_ingredients_to_file(my_ingredients, filename="inventory.txt")
     recipes = fetch_enriched_recipes(my_ingredients)
     print(f"Found {len(recipes)} recipes")
     for i, recipe in enumerate(recipes[:3], 1): 
         print(f"{i}. {recipe['title']}")
-    save_disliked_ingredients_to_file(disliked_ingredients, filename="disliked.txt")
-    save_current_ingredients_to_file(my_ingredients, filename="inventory.txt")
     save_results_to_file(recipes, output_file)
     
     print(f"\nResults have been saved to {os.path.abspath(output_file)}")
