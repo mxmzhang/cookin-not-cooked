@@ -90,7 +90,7 @@ my_ingredients = []
 with open("inventory.txt", "r") as f:
     lines = f.readlines()
     my_ingredients = [line.split(":")[0].strip() for line in lines]
-def search_recipes_by_ingredients(ingredients, number = 1, min_used=4):
+def search_recipes_by_ingredients(ingredients, number = 1, min_used=2):
     params = {
         'apiKey': API_KEY,
         #'ingredients': ",".join([ing["name"] for ing in ingredients]),
@@ -124,7 +124,7 @@ def get_recipe_info_bulk(recipe_ids):
     response = requests.get(f"{BASE_URL}/recipes/informationBulk", params=params)
     return response.json()
 
-def fetch_enriched_recipes(user_ingredients, max_results=15):
+def fetch_enriched_recipes(user_ingredients, max_results=100):
     basic_results = search_recipes_by_ingredients(user_ingredients, number=max_results)
     recipe_ids = [r['id'] for r in basic_results]
     detailed_info = get_recipe_info_bulk(recipe_ids)

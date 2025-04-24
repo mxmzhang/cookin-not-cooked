@@ -3,6 +3,8 @@ import requests
 import time
 import re
 from colorama import init, Fore, Style
+from datetime import datetime
+import math
 
 # Initialize colorama for cross-platform colored terminal output
 init()
@@ -22,7 +24,32 @@ def print_error(message):
 def print_debug(message):
     print(f"{Fore.CYAN}[D]{Style.RESET_ALL} {message}")
 
-def call_gemini_for_proportions(api_key, ingredients_batch, retry_count=2):
+class RateLimiter:
+    def __init__(self, requests_per_minute=15):
+        self.requests_per_minute = requests_per_minute
+        self.request_timestamps = []
+        self.period_seconds = 60  # 1 minute
+    
+    def wait_if_needed(self):
+        now = time.time()
+        
+        # Remove timestamps older than our period
+        self.request_timestamps = [ts for ts in self.request_timestamps 
+                                  if now - ts < self.period_seconds]
+        
+        # If we've hit our limit, wait until the oldest request expires
+        if len(self.request_timestamps) >= self.requests_per_minute:
+            oldest_timestamp = min(self.request_timestamps)
+            sleep_time = self.period_seconds - (now - oldest_timestamp)
+            
+            if sleep_time > 0:
+                print_info(f"Rate limit reached. Waiting {sleep_time:.1f} seconds before next request...")
+                time.sleep(sleep_time + 0.5)  # Add a small buffer
+        
+        # Add the current timestamp
+        self.request_timestamps.append(time.time())
+
+def call_gemini_for_proportions(api_key, ingredients_batch, rate_limiter, retry_count=2):
     if not ingredients_batch:
         print_warning("No ingredients to process")
         return {}
@@ -65,6 +92,12 @@ def call_gemini_for_proportions(api_key, ingredients_batch, retry_count=2):
     
     for attempt in range(retry_count + 1):
         try:
+            # Check rate limits before making the request
+            rate_limiter.wait_if_needed()
+            
+            request_time = datetime.now().strftime("%H:%M:%S")
+            print_info(f"Making API request at {request_time}")
+            
             response = requests.post(url, headers=headers, params={"key": api_key}, json=data)
             
             if response.status_code != 200:
@@ -130,11 +163,15 @@ def call_gemini_for_proportions(api_key, ingredients_batch, retry_count=2):
     
     return {}
 
-def create_gemini_query_format(spoonacular_data_file, kroger_data_file, api_key, output_file="gemini_query_results.json"):
+def create_gemini_query_format(spoonacular_data_file, kroger_data_file, api_key, output_file="gemini_query_results.json", requests_per_minute=15):
     print_info(f"Starting process with files:")
     print_info(f"  - Spoonacular data: {spoonacular_data_file}")
     print_info(f"  - Kroger data: {kroger_data_file}")
     print_info(f"  - Output file: {output_file}")
+    print_info(f"  - Rate limit: {requests_per_minute} requests per minute")
+    
+    # Initialize rate limiter
+    rate_limiter = RateLimiter(requests_per_minute)
     
     # Load Spoonacular data
     try:
@@ -188,7 +225,18 @@ def create_gemini_query_format(spoonacular_data_file, kroger_data_file, api_key,
     print_info(f"Processing {total_recipes} recipes")
     print("-" * 60)
     
-    for recipe in spoonacular_data["recipes"]:
+    # Calculate estimated completion time
+    avg_ingredients_per_recipe = 10  # Estimated average
+    total_estimated_batches = math.ceil(total_recipes * avg_ingredients_per_recipe / 30)
+    minutes_required = math.ceil(total_estimated_batches / requests_per_minute)
+    
+    print_info(f"Estimated completion time: ~{minutes_required} minutes")
+    start_time = time.time()
+    
+    # Create a file to save progress incrementally
+    progress_file = output_file.replace(".json", "_progress.json")
+    
+    for recipe_index, recipe in enumerate(spoonacular_data["recipes"]):
         processed_recipes += 1
         recipe_id = recipe["r_id"]
         recipe_name = recipe["name"]
@@ -252,8 +300,11 @@ def create_gemini_query_format(spoonacular_data_file, kroger_data_file, api_key,
         for i in range(0, len(conversion_batch), MAX_BATCH_SIZE):
             batch_slice = conversion_batch[i:i + MAX_BATCH_SIZE]
             
-            print_info(f"Processing batch of {len(batch_slice)} ingredients (batch {i//MAX_BATCH_SIZE + 1})")
-            batch_proportions = call_gemini_for_proportions(api_key, batch_slice)
+            batch_num = i//MAX_BATCH_SIZE + 1
+            total_batches = math.ceil(len(conversion_batch) / MAX_BATCH_SIZE)
+            print_info(f"Processing batch {batch_num}/{total_batches} with {len(batch_slice)} ingredients")
+            
+            batch_proportions = call_gemini_for_proportions(api_key, batch_slice, rate_limiter)
             
             # Merge results
             for idx, proportion in batch_proportions.items():
@@ -261,10 +312,6 @@ def create_gemini_query_format(spoonacular_data_file, kroger_data_file, api_key,
                 if batch_idx < len(conversion_batch):
                     batch_item = conversion_batch[batch_idx]
                     all_proportions[batch_item["ri_id"]] = proportion
-            
-            # Wait before next batch
-            if i + MAX_BATCH_SIZE < len(conversion_batch):
-                time.sleep(2)
         
         # Create recipe structure for output (following your format)
         recipe_result = {
@@ -292,13 +339,37 @@ def create_gemini_query_format(spoonacular_data_file, kroger_data_file, api_key,
         
         gemini_results["gemini_query"]["recipes"].append(recipe_result)
         print_success(f"Completed recipe: {recipe_name}")
-        print("-" * 60)
         
-        # Wait a bit before next recipe
-        if processed_recipes < total_recipes:
-            time.sleep(1)
+        # Save progress incrementally (every 5 recipes)
+        if recipe_index % 5 == 0 or recipe_index == total_recipes - 1:
+            try:
+                with open(progress_file, 'w') as f:
+                    json.dump(gemini_results, f, indent=2)
+                print_info(f"Progress saved to {progress_file}")
+            except Exception as e:
+                print_warning(f"Failed to save progress file: {str(e)}")
+        
+        # Calculate and display progress information
+        elapsed_time = time.time() - start_time
+        recipes_remaining = total_recipes - processed_recipes
+        if processed_recipes > 1:  # Only calculate after we have processed at least one recipe
+            time_per_recipe = elapsed_time / processed_recipes
+            estimated_time_remaining = time_per_recipe * recipes_remaining
+            
+            hours, remainder = divmod(estimated_time_remaining, 3600)
+            minutes, seconds = divmod(remainder, 60)
+            
+            if hours > 0:
+                time_str = f"{int(hours)}h {int(minutes)}m"
+            else:
+                time_str = f"{int(minutes)}m {int(seconds)}s"
+                
+            print_info(f"Progress: {processed_recipes}/{total_recipes} recipes ({processed_recipes/total_recipes*100:.1f}%)")
+            print_info(f"Estimated time remaining: {time_str}")
+        
+        print("-" * 60)
     
-    # Save the results
+    # Save the final results
     try:
         with open(output_file, 'w') as f:
             json.dump(gemini_results, f, indent=2)
@@ -306,6 +377,19 @@ def create_gemini_query_format(spoonacular_data_file, kroger_data_file, api_key,
     except Exception as e:
         print_error(f"Failed to save output file: {str(e)}")
         return False
+    
+    # Calculate and display final statistics
+    total_time = time.time() - start_time
+    hours, remainder = divmod(total_time, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    
+    if hours > 0:
+        time_str = f"{int(hours)}h {int(minutes)}m {int(seconds)}s"
+    else:
+        time_str = f"{int(minutes)}m {int(seconds)}s"
+        
+    print_info(f"Total processing time: {time_str}")
+    print_info(f"Recipes processed: {processed_recipes}")
     
     return True
 
@@ -321,6 +405,8 @@ if __name__ == "__main__":
                         help='Output file for Gemini query results')
     parser.add_argument('--api-key', default="AIzaSyAy2D2jxTMLUpow2jsf6IIjC2XR6sENRDs", 
                         help='Gemini API key')
+    parser.add_argument('--rate-limit', type=int, default=15,
+                        help='API rate limit (requests per minute)')
     
     args = parser.parse_args()
     
@@ -328,7 +414,13 @@ if __name__ == "__main__":
     print_info("GEMINI RECIPE PROPORTION CALCULATOR")
     print("=" * 80 + "\n")
     
-    success = create_gemini_query_format(args.spoonacular_data, args.kroger_data, args.api_key, args.output)
+    success = create_gemini_query_format(
+        args.spoonacular_data, 
+        args.kroger_data, 
+        args.api_key, 
+        args.output,
+        args.rate_limit
+    )
     
     if success:
         print_success("Process completed successfully!")
