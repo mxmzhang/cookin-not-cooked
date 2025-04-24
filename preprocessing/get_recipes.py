@@ -2,7 +2,7 @@ import requests
 import json
 import os 
 
-API_KEY = 'c85a5e59b51d495392a990aee126e526'
+API_KEY = '2add8db43662436abe6dc85a5ae84a30'
 BASE_URL = 'https://api.spoonacular.com'
 '''
 def get_ingredients_with_amounts():
@@ -203,7 +203,9 @@ def load_results_from_file(filename):
     except FileNotFoundError:
         print(f"File {filename} not found")
         return None
-    
+
+my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
+ 
 if __name__ == "__main__":
     output_file = "recipe_results.json"
     #get_user_preferences()

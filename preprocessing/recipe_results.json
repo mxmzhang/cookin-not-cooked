@@ -787,7 +787,7 @@
         "name": "broccoli"
       },
       {
-        "name": "eggs"
+        "name": "egg"
       },
       {
         "name": "chicken breast"
@@ -1695,7 +1695,7 @@
         "name": "potato"
       },
       {
-        "name": "eggs"
+        "name": "egg"
       },
       {
         "name": "tomato"
@@ -3199,7 +3199,7 @@
         "name": "broccoli"
       },
       {
-        "name": "eggs"
+        "name": "egg"
       },
       {
         "name": "chicken breast"
@@ -3842,7 +3842,7 @@
         "name": "potato"
       },
       {
-        "name": "eggs"
+        "name": "egg"
       }
     ],
     "nutrition": {
@@ -4165,7 +4165,7 @@
         "name": "potato"
       },
       {
-        "name": "eggs"
+        "name": "egg"
       }
     ],
     "nutrition": {

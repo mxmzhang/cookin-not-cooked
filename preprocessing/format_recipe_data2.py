@@ -47,12 +47,12 @@ def create_structured_data(recipes_from_api):
             nutrients = {}
             for nutrient in recipe['nutrition']['nutrients']:
                 nutrient_name = nutrient.get('name', '').lower()
-                if nutrient_name in ['protein', 'calories']:
+                if nutrient_name in ['protein', 'cholesterol', 'calories']:
                     nutrients[nutrient_name] = nutrient.get('amount', 0)
             
             recipe_entry["nutrients"] = nutrients
         else:
-            recipe_entry["nutrients"] = {"protein": 0, "calories": 0}
+            recipe_entry["nutrients"] = {"protein": 0, "cholesterol": 0, "calories": 0}
         
         result["recipes"].append(recipe_entry)
         
