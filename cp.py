@@ -104,10 +104,13 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, chosen_meals = 5):
     total_calories = model.NewIntVar(0, 10000000, "total_calories")
     model.Add(total_calories == sum(round(recipes[rid].get("nutrients", {})["calories"]) * x[rid] for rid in range(rlen)))
 
+    total_chol = model.NewIntVar(0, 10000000, "total_cholesterol")
+    model.Add(total_chol == sum(round(recipes[rid].get("nutrients", {})["cholesterol"]) * x[rid] for rid in range(rlen)))
+
     obj_expr = model.NewIntVar(-100000000, 100000000, "obj_expr")
 
     # make sure units of things in objective function are scaled the same
-    model.Add(obj_expr == (6*total_protein - total_calories - 100 * dislike_sum)) # test/experiment with objective functions
+    model.Add(obj_expr == (40*total_protein - total_calories - total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
     model.Maximize(obj_expr)
 
     solver = cp_model.CpSolver()
@@ -139,9 +142,14 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, chosen_meals = 5):
         print(f"Total cost used: {sum(ingredients[i].get("unit_price")*purchased[i]/(100.0*100.0) for i in range(ilen))} (Budget = {budget})")
         print("Total Protein:", solver.Value(total_protein))
         print("Total Calories:", solver.Value(total_calories))
+        print("Total Cholestrol:", solver.Value(total_chol))
+
+        print("Calories to Protein Ratio:", solver.Value(total_calories) / solver.Value(total_protein) )
+        print("Calories to Cholesterol Ratio:", solver.Value(total_calories) / solver.Value(total_chol))
 
     else:
         print("No feasible solution found.")
+
 
 def main():
     mainfile = "preprocessing/combined_recipe_data.json"
