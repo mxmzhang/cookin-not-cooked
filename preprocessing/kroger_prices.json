@@ -102,8 +102,8 @@
       {
         "i_id": 14,
         "name": "thyme leaves",
-        "unit_price": 249,
-        "unit_quantity": 0.5,
+        "unit_price": 349,
+        "unit_quantity": 0.78,
         "measurement": "oz"
       },
       {
@@ -172,9 +172,9 @@
       {
         "i_id": 24,
         "name": "madras curry powder",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 599,
+        "unit_quantity": 2.0,
+        "measurement": "oz"
       },
       {
         "i_id": 25,
@@ -200,9 +200,9 @@
       {
         "i_id": 28,
         "name": "ready-made shortcrust pastry",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 699,
+        "unit_quantity": 17.3,
+        "measurement": "oz"
       },
       {
         "i_id": 29,
@@ -291,9 +291,9 @@
       {
         "i_id": 41,
         "name": "capers as you like",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 349,
+        "unit_quantity": 3.5,
+        "measurement": "fl oz"
       },
       {
         "i_id": 42,
@@ -347,16 +347,16 @@
       {
         "i_id": 49,
         "name": "baby bella mushrooms",
-        "unit_price": 279,
+        "unit_price": 249,
         "unit_quantity": 8.0,
         "measurement": "oz"
       },
       {
         "i_id": 50,
         "name": "white wine",
-        "unit_price": 1648,
-        "unit_quantity": 750.0,
-        "measurement": "ml"
+        "unit_price": 2399,
+        "unit_quantity": 3.0,
+        "measurement": "liter"
       },
       {
         "i_id": 51,
