@@ -6,8 +6,6 @@ from colorama import init, Fore, Style
 from datetime import datetime
 import math
 
-# Initialize colorama for cross-platform colored terminal output
-init()
 
 def print_info(message):
     print(f"{message}")

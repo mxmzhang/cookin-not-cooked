@@ -25,7 +25,7 @@
       {
         "i_id": 3,
         "name": "onion",
-        "unit_price": 159,
+        "unit_price": 99,
         "unit_quantity": 1.0,
         "measurement": "lb"
       },
@@ -67,9 +67,9 @@
       {
         "i_id": 9,
         "name": "m zarella cheese",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 379,
+        "unit_quantity": 8.0,
+        "measurement": "oz"
       },
       {
         "i_id": 10,
@@ -88,9 +88,9 @@
       {
         "i_id": 12,
         "name": "hardboiled eggs",
-        "unit_price": 229,
-        "unit_quantity": 3.1,
-        "measurement": "oz"
+        "unit_price": 359,
+        "unit_quantity": 6.0,
+        "measurement": "ct"
       },
       {
         "i_id": 13,
@@ -116,9 +116,9 @@
       {
         "i_id": 16,
         "name": "grilledwise tuna steaks",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 700,
+        "unit_quantity": 8.0,
+        "measurement": "oz"
       },
       {
         "i_id": 17,
@@ -172,8 +172,8 @@
       {
         "i_id": 24,
         "name": "madras curry powder",
-        "unit_price": 399,
-        "unit_quantity": 1.62,
+        "unit_price": 599,
+        "unit_quantity": 2.0,
         "measurement": "oz"
       },
       {
@@ -207,8 +207,8 @@
       {
         "i_id": 29,
         "name": "asparagus spears",
-        "unit_price": 399,
-        "unit_quantity": 15.0,
+        "unit_price": 419,
+        "unit_quantity": 10.0,
         "measurement": "oz"
       },
       {
@@ -291,9 +291,9 @@
       {
         "i_id": 41,
         "name": "capers as you like",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 349,
+        "unit_quantity": 3.5,
+        "measurement": "fl oz"
       },
       {
         "i_id": 42,
@@ -326,9 +326,9 @@
       {
         "i_id": 46,
         "name": "precooked vegetable noodles",
-        "unit_price": 219,
-        "unit_quantity": 2.0,
-        "measurement": "pk / 4.4 oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 47,

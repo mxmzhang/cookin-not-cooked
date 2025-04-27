@@ -25,11 +25,21 @@ def get_disliked_ingredients():
             break
         dislikes.append(item)
     return dislikes
-def get_user_preferences(filename = "cap.txt"):
-    print("\n=== Welcome to Recipe Finder ===")
-    print("This program will help you find recipes using ingredients you already have!")
+
+def get_allergic_ingredients():
+    print("\nEnter ingredients you are allergic to (one at a time). Type 'done' to finish:")
+    allergies = []
+    while True:
+        item = input("Allergy: ").strip()
+        if item.lower() == 'done':
+            break
+        allergies.append(item)
+    return allergies
+
+def get_user_preferences(filename="cap.txt"):
+    print("\n=== Welcome to Cookin' not Cooked ===")
+    print("This program will help you find recipes using ingredients you already have to fit your health goals!")
     
-    # Get calorie preference
     while True:
         try:
             calorie_cap = input("\nWhat's your maximum calorie limit per meal? (Enter a number, or 0 for no limit): ")
@@ -41,7 +51,6 @@ def get_user_preferences(filename = "cap.txt"):
         except ValueError:
             print("Please enter a valid number.")
     
-    # Get number of recipes
     while True:
         try:
             num_recipes = input("\nHow many recipe suggestions would you like to see? (1-20): ")
@@ -52,22 +61,18 @@ def get_user_preferences(filename = "cap.txt"):
             break
         except ValueError:
             print("Please enter a valid number.")
+
+    while True:
+        try:
+            budget = input("\nWhat is your shopping budget?: ")
+            budget = int(budget)
+            break
+        except ValueError:
+            print("Please enter a valid number.")
+
     with open(filename, 'w') as f:
-        f.write(f"{calorie_cap}\n{num_recipes}\n")
-    return calorie_cap, num_recipes
-
-# Example usage
-preferences = get_user_preferences()
-my_ingredients = get_ingredients_with_amounts()
-disliked_ingredients = get_disliked_ingredients()
-
-print("\nIngredients you have:")
-for ing in my_ingredients:
-    print(f"- {ing['name']}: {ing['amount']}")
-
-print("\nIngredients you don't like:")
-for item in disliked_ingredients:
-    print(f"- {item}")
+        f.write(f"{calorie_cap},{num_recipes},{budget}")
+    return calorie_cap, num_recipes, budget
 
 def save_current_ingredients_to_file(my_ingredients, filename="inventory.txt"):
     with open(filename, 'w') as f:
@@ -75,22 +80,39 @@ def save_current_ingredients_to_file(my_ingredients, filename="inventory.txt"):
             f.write(f"{item['name']}: {item['amount']}\n")
     print(f"Pantry ingredients saved to {filename}")
 
-
 def save_disliked_ingredients_to_file(disliked_ingredients, filename="disliked.txt"):
     with open(filename, 'w') as f:
         for item in disliked_ingredients:
             f.write(f"{item}\n")
     print(f"Disliked ingredients saved to {filename}")
 
+def save_allergic_ingredients_to_file(allergic_ingredients, filename="allergies.txt"):
+    with open(filename, 'w') as f:
+        for item in allergic_ingredients:
+            f.write(f"{item}\n")
+    print(f"Allergies saved to {filename}")
 
-
-#my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
-my_ingredients = []
+def load_ingredients_from_file(filename="inventory.txt"):
+    ingredients = []
+    try:
+        with open(filename, 'r') as f:
+            for line in f:
+                if ':' in line:
+                    name, amount = line.strip().split(':')
+                    ingredients.append({
+                        "name": name.strip(),
+                        "amount": amount.strip()  # Keep as string instead of converting to int
+                    })
+        return ingredients
+    except FileNotFoundError:
+        print(f"File {filename} not found. Starting with empty inventory.")
+        return []
+    
 def search_recipes_by_ingredients(ingredients, number = 1, min_used=2):
     params = {
         'apiKey': API_KEY,
-        #'ingredients': ",".join([ing["name"] for ing in ingredients]),
-        'ingredients': ",".join(ingredients),
+        'ingredients': ",".join([ing["name"] for ing in ingredients]),
+        #'ingredients': ",".join(ingredients),
         'number': number,
         'ranking': 1,
         'offset': 3,
@@ -204,10 +226,28 @@ def load_results_from_file(filename):
  
 if __name__ == "__main__":
     output_file = "recipe_results.json"
-    #get_user_preferences()
-    #save_disliked_ingredients_to_file(disliked_ingredients, filename="disliked.txt")
-    #save_current_ingredients_to_file(my_ingredients, filename="inventory.txt")
-    recipes = fetch_enriched_recipes(my_ingredients)
+    calorie_cap, num_recipes, budget = get_user_preferences()
+    my_ingredients = get_ingredients_with_amounts()
+    disliked_ingredients = get_disliked_ingredients()
+    allergic_ingredients = get_allergic_ingredients()
+    save_current_ingredients_to_file(my_ingredients)
+    save_disliked_ingredients_to_file(disliked_ingredients)
+    save_allergic_ingredients_to_file(allergic_ingredients)
+    
+    print("\nIngredients you have:")
+    for ing in my_ingredients:
+        print(f"- {ing['name']}: {ing['amount']}")
+
+    print("\nIngredients you don't like:")
+    for item in disliked_ingredients:
+        print(f"- {item}")
+
+    print("\nIngredients you are allergic to:")
+    for item in allergic_ingredients:
+        print(f"- {item}")
+    
+    print("\nsearching for recipes!")
+    recipes = search_recipes_by_ingredients(my_ingredients, number=15)
     print(f"Found {len(recipes)} recipes")
     for i, recipe in enumerate(recipes[:3], 1): 
         print(f"{i}. {recipe['title']}")
