@@ -87,7 +87,7 @@ def save_disliked_ingredients_to_file(disliked_ingredients, filename="disliked.t
 
 #my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
 my_ingredients = []
-with open("inventory.txt", "r") as f:
+with open("preprocessing/inventory.txt", "r") as f:
     lines = f.readlines()
     my_ingredients = [line.split(":")[0].strip() for line in lines]
 def search_recipes_by_ingredients(ingredients, number = 1, min_used=2):

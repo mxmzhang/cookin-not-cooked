@@ -171,7 +171,7 @@ def main():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return
-    cp(data, 200, 460, inventory, disliked_ct, 2)
+    cp(data, 200, 460, inventory, disliked_ct, 10)
 
 if __name__ == '__main__':
     main()
