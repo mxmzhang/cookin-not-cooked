@@ -247,7 +247,7 @@ if __name__ == "__main__":
         print(f"- {item}")
     
     print("\nsearching for recipes!")
-    recipes = search_recipes_by_ingredients(my_ingredients, number=15)
+    recipes = fetch_enriched_recipes(my_ingredients, max_results=15)
     print(f"Found {len(recipes)} recipes")
     for i, recipe in enumerate(recipes[:3], 1): 
         print(f"{i}. {recipe['title']}")

@@ -6,7 +6,8 @@
       "nutrients": {
         "calories": 424.14,
         "cholesterol": 61.13,
-        "protein": 22.06
+        "protein": 22.06,
+        "fiber": 2.74
       }
     },
     {
@@ -15,7 +16,8 @@
       "nutrients": {
         "calories": 834.51,
         "cholesterol": 361.72,
-        "protein": 114.89
+        "protein": 114.89,
+        "fiber": 2.88
       }
     },
     {
@@ -24,7 +26,8 @@
       "nutrients": {
         "calories": 3024.16,
         "cholesterol": 50.53,
-        "protein": 153.15
+        "protein": 153.15,
+        "fiber": 81.04
       }
     },
     {
@@ -33,7 +36,8 @@
       "nutrients": {
         "calories": 1334.57,
         "cholesterol": 701.97,
-        "protein": 70.56
+        "protein": 70.56,
+        "fiber": 6.26
       }
     },
     {
@@ -42,7 +46,8 @@
       "nutrients": {
         "calories": 1317.89,
         "cholesterol": 258.58,
-        "protein": 52.98
+        "protein": 52.98,
+        "fiber": 5.81
       }
     },
     {
@@ -51,7 +56,8 @@
       "nutrients": {
         "calories": 327.75,
         "cholesterol": 36.68,
-        "protein": 19.42
+        "protein": 19.42,
+        "fiber": 2.67
       }
     },
     {
@@ -60,7 +66,8 @@
       "nutrients": {
         "calories": 349.5,
         "cholesterol": 81.92,
-        "protein": 10.28
+        "protein": 10.28,
+        "fiber": 5.06
       }
     },
     {
@@ -69,7 +76,8 @@
       "nutrients": {
         "calories": 638.61,
         "cholesterol": 156.31,
-        "protein": 30.72
+        "protein": 30.72,
+        "fiber": 3.39
       }
     },
     {
@@ -78,7 +86,8 @@
       "nutrients": {
         "calories": 300.27,
         "cholesterol": 111.52,
-        "protein": 8.37
+        "protein": 8.37,
+        "fiber": 5.06
       }
     },
     {
@@ -87,7 +96,8 @@
       "nutrients": {
         "calories": 6332.23,
         "cholesterol": 1392.92,
-        "protein": 390.01
+        "protein": 390.01,
+        "fiber": 27.83
       }
     },
     {
@@ -96,7 +106,8 @@
       "nutrients": {
         "calories": 451.79,
         "cholesterol": 20.4,
-        "protein": 22.88
+        "protein": 22.88,
+        "fiber": 9.02
       }
     },
     {
@@ -105,7 +116,8 @@
       "nutrients": {
         "calories": 582.74,
         "cholesterol": 81.84,
-        "protein": 23.64
+        "protein": 23.64,
+        "fiber": 9.78
       }
     },
     {
@@ -114,7 +126,8 @@
       "nutrients": {
         "calories": 426.91,
         "cholesterol": 75.3,
-        "protein": 29.16
+        "protein": 29.16,
+        "fiber": 5.24
       }
     },
     {
@@ -123,7 +136,8 @@
       "nutrients": {
         "calories": 605.07,
         "cholesterol": 78.24,
-        "protein": 40.05
+        "protein": 40.05,
+        "fiber": 6.68
       }
     },
     {
@@ -132,7 +146,8 @@
       "nutrients": {
         "calories": 334.56,
         "cholesterol": 47.88,
-        "protein": 9.17
+        "protein": 9.17,
+        "fiber": 2.42
       }
     }
   ],

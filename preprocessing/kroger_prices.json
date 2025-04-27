@@ -53,9 +53,9 @@
       {
         "i_id": 7,
         "name": "ground beef i like",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 649,
+        "unit_quantity": 1.0,
+        "measurement": "lb"
       },
       {
         "i_id": 8,
@@ -67,9 +67,9 @@
       {
         "i_id": 9,
         "name": "m zarella cheese",
-        "unit_price": 379,
-        "unit_quantity": 8.0,
-        "measurement": "oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 10,
@@ -116,9 +116,9 @@
       {
         "i_id": 16,
         "name": "grilledwise tuna steaks",
-        "unit_price": 700,
-        "unit_quantity": 8.0,
-        "measurement": "oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 17,
@@ -263,9 +263,9 @@
       {
         "i_id": 37,
         "name": "laura chenel's chabis goat cheese",
-        "unit_price": 799,
-        "unit_quantity": 6.0,
-        "measurement": "oz"
+        "unit_price": null,
+        "unit_quantity": 1,
+        "measurement": "unit"
       },
       {
         "i_id": 38,
@@ -326,9 +326,9 @@
       {
         "i_id": 46,
         "name": "precooked vegetable noodles",
-        "unit_price": null,
-        "unit_quantity": 1,
-        "measurement": "unit"
+        "unit_price": 219,
+        "unit_quantity": 2.0,
+        "measurement": "pk / 4.4 oz"
       },
       {
         "i_id": 47,

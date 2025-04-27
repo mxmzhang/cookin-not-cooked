@@ -6,20 +6,21 @@
       "nutrients": {
         "calories": 424.14,
         "cholesterol": 61.13,
-        "protein": 22.06
+        "protein": 22.06,
+        "fiber": 2.74
       },
       "ingredients": [
         {
           "ri_id": "1123",
           "name": "egg",
-          "proportion": 0.0833,
+          "proportion": 0.083,
           "unit_price": 449,
           "i_id": 0
         },
         {
           "ri_id": "98849",
           "name": "canned tomatoes",
-          "proportion": 0.6207,
+          "proportion": 0.966,
           "unit_price": 100,
           "i_id": 1
         },
@@ -33,21 +34,21 @@
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.0046,
+          "proportion": 0.013,
           "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "10011693",
           "name": "canned tomatoes",
-          "proportion": 0.4138,
+          "proportion": 0.414,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "11549",
           "name": "canned tomatoes",
-          "proportion": 1.1034,
+          "proportion": 1.103,
           "unit_price": 100,
           "i_id": 1
         },
@@ -76,7 +77,7 @@
           "ri_id": "23557",
           "name": "ground beef i like",
           "proportion": 1.0,
-          "unit_price": 400,
+          "unit_price": 649,
           "i_id": 7
         },
         {
@@ -89,29 +90,29 @@
         {
           "ri_id": "1022027",
           "name": "onion",
-          "proportion": 0.0015625,
+          "proportion": 0.007,
           "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "1041009",
           "name": "m zarella cheese",
-          "proportion": 0.125,
-          "unit_price": 379,
+          "proportion": 1,
+          "unit_price": 400,
           "i_id": 9
         },
         {
           "ri_id": "1033",
           "name": "parmesan reggiano",
-          "proportion": 1.0714,
+          "proportion": 0.107,
           "unit_price": 999,
           "i_id": 10
         },
         {
           "ri_id": "1036",
           "name": "m zarella cheese",
-          "proportion": 2.0,
-          "unit_price": 379,
+          "proportion": 1,
+          "unit_price": 400,
           "i_id": 9
         }
       ]
@@ -122,13 +123,14 @@
       "nutrients": {
         "calories": 834.51,
         "cholesterol": 361.72,
-        "protein": 114.89
+        "protein": 114.89,
+        "fiber": 2.88
       },
       "ingredients": [
         {
           "ri_id": "11677",
           "name": "shallot",
-          "proportion": 0.0069,
+          "proportion": 0.00227,
           "unit_price": 499,
           "i_id": 11
         },
@@ -142,35 +144,35 @@
         {
           "ri_id": "10011355",
           "name": "canned tomatoes",
-          "proportion": 0.69,
+          "proportion": 0.6897,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "11529",
           "name": "canned tomatoes",
-          "proportion": 0.21,
+          "proportion": 0.2069,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "10011282",
           "name": "onion",
-          "proportion": 0.0069,
+          "proportion": 0.00227,
           "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "9152",
           "name": "lemon juice",
-          "proportion": 0.033,
+          "proportion": 0.0333,
           "unit_price": 169,
           "i_id": 13
         },
         {
           "ri_id": "1012049",
           "name": "thyme leaves",
-          "proportion": 0.128,
+          "proportion": 0.1282,
           "unit_price": 349,
           "i_id": 14
         },
@@ -184,7 +186,7 @@
         {
           "ri_id": "2027",
           "name": "thyme leaves",
-          "proportion": 0.026,
+          "proportion": 0.0256,
           "unit_price": 349,
           "i_id": 14
         },
@@ -198,8 +200,8 @@
         {
           "ri_id": "15117",
           "name": "grilledwise tuna steaks",
-          "proportion": 2.0,
-          "unit_price": 700,
+          "proportion": 1.0,
+          "unit_price": 400,
           "i_id": 16
         },
         {
@@ -212,21 +214,21 @@
         {
           "ri_id": "11052",
           "name": "grilledwise tuna steaks",
-          "proportion": 1.0,
-          "unit_price": 700,
+          "proportion": 0.0454,
+          "unit_price": 400,
           "i_id": 16
         },
         {
           "ri_id": "9195",
           "name": "ni\u00e7oise olives",
-          "proportion": 0.042,
+          "proportion": 0.0417,
           "unit_price": 399,
           "i_id": 18
         },
         {
           "ri_id": "15001",
           "name": "capers",
-          "proportion": 0.57,
+          "proportion": 0.5714,
           "unit_price": 349,
           "i_id": 19
         }
@@ -238,7 +240,8 @@
       "nutrients": {
         "calories": 3024.16,
         "cholesterol": 50.53,
-        "protein": 153.15
+        "protein": 153.15,
+        "fiber": 81.04
       },
       "ingredients": [
         {
@@ -251,28 +254,28 @@
         {
           "ri_id": "10011355",
           "name": "canned tomatoes",
-          "proportion": 0.27586206896551724,
+          "proportion": 0.275862,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "10611529",
           "name": "canned tomatoes",
-          "proportion": 0.5517241379310345,
+          "proportion": 0.551724,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "10011693",
           "name": "canned tomatoes",
-          "proportion": 0.06896551724137931,
+          "proportion": 0.0689655,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "10020499",
           "name": "dijon mustard",
-          "proportion": 0.04166666666666667,
+          "proportion": 0.0416667,
           "unit_price": 179,
           "i_id": 15
         },
@@ -286,7 +289,7 @@
         {
           "ri_id": "6080",
           "name": "chicken stock",
-          "proportion": 0.03125,
+          "proportion": 1,
           "unit_price": 279,
           "i_id": 20
         },
@@ -300,14 +303,14 @@
         {
           "ri_id": "11124",
           "name": "capers",
-          "proportion": 0.8571428571428571,
+          "proportion": 0.857143,
           "unit_price": 349,
           "i_id": 19
         },
         {
           "ri_id": "11549",
           "name": "canned tomatoes",
-          "proportion": 0.06896551724137931,
+          "proportion": 0.0689655,
           "unit_price": 100,
           "i_id": 1
         },
@@ -321,35 +324,35 @@
         {
           "ri_id": "10016051",
           "name": "canned tomatoes",
-          "proportion": 0.06896551724137931,
+          "proportion": 0.0689655,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "10016033",
           "name": "kidney beans",
-          "proportion": 0.06451612903225806,
+          "proportion": 0.0645161,
           "unit_price": 89,
           "i_id": 22
         },
         {
           "ri_id": "1032009",
           "name": "pepper flakes",
-          "proportion": 0.2857142857142857,
+          "proportion": 1,
           "unit_price": 269,
           "i_id": 23
         },
         {
           "ri_id": "2015",
           "name": "madras curry powder",
-          "proportion": 0.5,
+          "proportion": 1,
           "unit_price": 599,
           "i_id": 24
         },
         {
           "ri_id": "2028",
           "name": "paprika",
-          "proportion": 0.5,
+          "proportion": 1,
           "unit_price": 125,
           "i_id": 25
         }
@@ -361,13 +364,14 @@
       "nutrients": {
         "calories": 1334.57,
         "cholesterol": 701.97,
-        "protein": 70.56
+        "protein": 70.56,
+        "fiber": 6.26
       },
       "ingredients": [
         {
           "ri_id": "10011090",
           "name": "broccoli florets",
-          "proportion": 0.21,
+          "proportion": 0.23,
           "unit_price": 329,
           "i_id": 26
         },
@@ -381,14 +385,14 @@
         {
           "ri_id": "11291",
           "name": "onion",
-          "proportion": 0.015,
+          "proportion": 0.01,
           "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.006,
+          "proportion": 0.004,
           "unit_price": 99,
           "i_id": 3
         },
@@ -402,7 +406,7 @@
         {
           "ri_id": "15076",
           "name": "alaska salmon",
-          "proportion": 0.52,
+          "proportion": 0.97,
           "unit_price": 1099,
           "i_id": 27
         },
@@ -416,14 +420,14 @@
         {
           "ri_id": "11011",
           "name": "asparagus spears",
-          "proportion": 0.27,
+          "proportion": 0.3,
           "unit_price": 419,
           "i_id": 29
         },
         {
           "ri_id": "11246",
           "name": "leek",
-          "proportion": 0.006,
+          "proportion": 0.005,
           "unit_price": 349,
           "i_id": 30
         },
@@ -437,56 +441,56 @@
         {
           "ri_id": "1059195",
           "name": "ni\u00e7oise olives",
-          "proportion": 0.19,
+          "proportion": 0.27,
           "unit_price": 399,
           "i_id": 18
         },
         {
           "ri_id": "1021004",
           "name": "m zarella cheese",
-          "proportion": 0.16,
-          "unit_price": 379,
+          "proportion": 1.0,
+          "unit_price": 400,
           "i_id": 9
         },
         {
           "ri_id": "1009",
           "name": "m zarella cheese",
-          "proportion": 0.16,
-          "unit_price": 379,
+          "proportion": 1.0,
+          "unit_price": 400,
           "i_id": 9
         },
         {
           "ri_id": "1026",
           "name": "m zarella cheese",
-          "proportion": 0.23,
-          "unit_price": 379,
+          "proportion": 1.0,
+          "unit_price": 400,
           "i_id": 9
         },
         {
           "ri_id": "1019",
           "name": "m zarella cheese",
-          "proportion": 0.16,
-          "unit_price": 379,
+          "proportion": 1.0,
+          "unit_price": 400,
           "i_id": 9
         },
         {
           "ri_id": "93698",
           "name": "capers",
-          "proportion": 0.03,
+          "proportion": 0.08,
           "unit_price": 349,
           "i_id": 19
         },
         {
           "ri_id": "1077",
           "name": "milk",
-          "proportion": 0.03,
+          "proportion": 0.008,
           "unit_price": 259,
           "i_id": 31
         },
         {
           "ri_id": "1001052",
           "name": "single cream",
-          "proportion": 1,
+          "proportion": 0.0125,
           "unit_price": 399,
           "i_id": 32
         }
@@ -498,7 +502,8 @@
       "nutrients": {
         "calories": 1317.89,
         "cholesterol": 258.58,
-        "protein": 52.98
+        "protein": 52.98,
+        "fiber": 5.81
       },
       "ingredients": [
         {
@@ -518,35 +523,35 @@
         {
           "ri_id": "1123",
           "name": "egg",
-          "proportion": 0.0833,
+          "proportion": 0.08333333333333333,
           "unit_price": 449,
           "i_id": 0
         },
         {
           "ri_id": "11529",
           "name": "canned tomatoes",
-          "proportion": 0.069,
+          "proportion": 0.06896551724137931,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "18079",
           "name": "panko",
-          "proportion": 0.125,
+          "proportion": 1.25,
           "unit_price": 259,
           "i_id": 34
         },
         {
           "ri_id": "1032",
           "name": "m zarella cheese",
-          "proportion": 0.0625,
-          "unit_price": 379,
+          "proportion": 1,
+          "unit_price": 400,
           "i_id": 9
         },
         {
           "ri_id": "2044",
           "name": "basil",
-          "proportion": 0.4,
+          "proportion": 4.0,
           "unit_price": 279,
           "i_id": 4
         },
@@ -565,7 +570,8 @@
       "nutrients": {
         "calories": 327.75,
         "cholesterol": 36.68,
-        "protein": 19.42
+        "protein": 19.42,
+        "fiber": 2.67
       },
       "ingredients": [
         {
@@ -620,7 +626,7 @@
         {
           "ri_id": "6175",
           "name": "lemon juice",
-          "proportion": 0.016666666666666666,
+          "proportion": 0.010416666666666666,
           "unit_price": 169,
           "i_id": 13
         },
@@ -639,7 +645,8 @@
       "nutrients": {
         "calories": 349.5,
         "cholesterol": 81.92,
-        "protein": 10.28
+        "protein": 10.28,
+        "fiber": 5.06
       },
       "ingredients": [
         {
@@ -702,7 +709,7 @@
           "ri_id": "1159",
           "name": "laura chenel's chabis goat cheese",
           "proportion": 1.0,
-          "unit_price": 799,
+          "unit_price": 400,
           "i_id": 37
         },
         {
@@ -720,7 +727,8 @@
       "nutrients": {
         "calories": 638.61,
         "cholesterol": 156.31,
-        "protein": 30.72
+        "protein": 30.72,
+        "fiber": 3.39
       },
       "ingredients": [
         {
@@ -754,15 +762,15 @@
         {
           "ri_id": "2044",
           "name": "basil",
-          "proportion": 0.4,
+          "proportion": 4.0,
           "unit_price": 279,
           "i_id": 4
         },
         {
           "ri_id": "1159",
           "name": "laura chenel's chabis goat cheese",
-          "proportion": 1.0,
-          "unit_price": 799,
+          "proportion": 6.0,
+          "unit_price": 400,
           "i_id": 37
         },
         {
@@ -775,8 +783,8 @@
         {
           "ri_id": "10023572",
           "name": "ground beef i like",
-          "proportion": 1.0,
-          "unit_price": 400,
+          "proportion": 1.5,
+          "unit_price": 649,
           "i_id": 7
         },
         {
@@ -789,7 +797,7 @@
         {
           "ri_id": "99226",
           "name": "sausage",
-          "proportion": 0.00625,
+          "proportion": 0.0625,
           "unit_price": 349,
           "i_id": 8
         }
@@ -801,7 +809,8 @@
       "nutrients": {
         "calories": 300.27,
         "cholesterol": 111.52,
-        "protein": 8.37
+        "protein": 8.37,
+        "fiber": 5.06
       },
       "ingredients": [
         {
@@ -821,7 +830,7 @@
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.06,
+          "proportion": 1,
           "unit_price": 99,
           "i_id": 3
         },
@@ -856,8 +865,8 @@
         {
           "ri_id": "11052",
           "name": "grilledwise tuna steaks",
-          "proportion": 0.19,
-          "unit_price": 700,
+          "proportion": 1,
+          "unit_price": 400,
           "i_id": 16
         },
         {
@@ -870,14 +879,14 @@
         {
           "ri_id": "2068",
           "name": "wine vinegar",
-          "proportion": 0.12,
+          "proportion": 0.125,
           "unit_price": 329,
           "i_id": 42
         },
         {
           "ri_id": "11821",
           "name": "bell pepper",
-          "proportion": 1.0,
+          "proportion": 1,
           "unit_price": 99,
           "i_id": 39
         }
@@ -889,7 +898,8 @@
       "nutrients": {
         "calories": 6332.23,
         "cholesterol": 1392.92,
-        "protein": 390.01
+        "protein": 390.01,
+        "fiber": 27.83
       },
       "ingredients": [
         {
@@ -909,7 +919,7 @@
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.0909,
+          "proportion": 0.015625,
           "unit_price": 99,
           "i_id": 3
         },
@@ -937,8 +947,8 @@
         {
           "ri_id": "10023572",
           "name": "ground beef i like",
-          "proportion": 1.0,
-          "unit_price": 400,
+          "proportion": 1.5,
+          "unit_price": 649,
           "i_id": 7
         },
         {
@@ -958,22 +968,22 @@
         {
           "ri_id": "1035",
           "name": "m zarella cheese",
-          "proportion": 1.0,
-          "unit_price": 379,
+          "proportion": 1,
+          "unit_price": 400,
           "i_id": 9
         },
         {
           "ri_id": "1036",
           "name": "m zarella cheese",
-          "proportion": 2.0,
-          "unit_price": 379,
+          "proportion": 1,
+          "unit_price": 400,
           "i_id": 9
         },
         {
           "ri_id": "1001026",
           "name": "m zarella cheese",
-          "proportion": 2.0,
-          "unit_price": 379,
+          "proportion": 1,
+          "unit_price": 400,
           "i_id": 9
         }
       ]
@@ -984,7 +994,8 @@
       "nutrients": {
         "calories": 451.79,
         "cholesterol": 20.4,
-        "protein": 22.88
+        "protein": 22.88,
+        "fiber": 9.02
       },
       "ingredients": [
         {
@@ -997,7 +1008,7 @@
         {
           "ri_id": "10611282",
           "name": "onion",
-          "proportion": 0.5,
+          "proportion": 0.090909,
           "unit_price": 99,
           "i_id": 3
         },
@@ -1018,7 +1029,7 @@
         {
           "ri_id": "2004",
           "name": "add 1 teaspoon bay",
-          "proportion": 1.0,
+          "proportion": 1,
           "unit_price": 400,
           "i_id": 44
         },
@@ -1046,7 +1057,7 @@
         {
           "ri_id": "2027",
           "name": "thyme leaves",
-          "proportion": 1.282051,
+          "proportion": 0.128205,
           "unit_price": 349,
           "i_id": 14
         },
@@ -1067,7 +1078,7 @@
         {
           "ri_id": "11477",
           "name": "summer squash",
-          "proportion": 0.5,
+          "proportion": 0.090909,
           "unit_price": 229,
           "i_id": 38
         }
@@ -1079,27 +1090,28 @@
       "nutrients": {
         "calories": 582.74,
         "cholesterol": 81.84,
-        "protein": 23.64
+        "protein": 23.64,
+        "fiber": 9.78
       },
       "ingredients": [
         {
           "ri_id": "20420",
           "name": "precooked vegetable noodles",
-          "proportion": 1.0,
-          "unit_price": 400,
+          "proportion": 0.4545,
+          "unit_price": 219,
           "i_id": 46
         },
         {
           "ri_id": "11090",
           "name": "broccoli florets",
-          "proportion": 0.16666666666666666,
+          "proportion": 0.1667,
           "unit_price": 329,
           "i_id": 26
         },
         {
           "ri_id": "11282",
           "name": "onion",
-          "proportion": 0.04166666666666667,
+          "proportion": 0.0083,
           "unit_price": 99,
           "i_id": 3
         },
@@ -1113,7 +1125,7 @@
         {
           "ri_id": "10016213",
           "name": "tofu",
-          "proportion": 0.5714285714285714,
+          "proportion": 0.5714,
           "unit_price": 159,
           "i_id": 47
         },
@@ -1127,7 +1139,7 @@
         {
           "ri_id": "99166",
           "name": "kidney beans",
-          "proportion": 0.12903225806451613,
+          "proportion": 0.0129,
           "unit_price": 89,
           "i_id": 22
         },
@@ -1141,7 +1153,7 @@
         {
           "ri_id": "2053",
           "name": "wine vinegar",
-          "proportion": 0.0625,
+          "proportion": 0.00625,
           "unit_price": 329,
           "i_id": 42
         },
@@ -1162,7 +1174,7 @@
         {
           "ri_id": "11124",
           "name": "capers",
-          "proportion": 0.2857142857142857,
+          "proportion": 0.2857,
           "unit_price": 349,
           "i_id": 19
         },
@@ -1188,7 +1200,8 @@
       "nutrients": {
         "calories": 426.91,
         "cholesterol": 75.3,
-        "protein": 29.16
+        "protein": 29.16,
+        "fiber": 5.24
       },
       "ingredients": [
         {
@@ -1297,7 +1310,8 @@
       "nutrients": {
         "calories": 605.07,
         "cholesterol": 78.24,
-        "protein": 40.05
+        "protein": 40.05,
+        "fiber": 6.68
       },
       "ingredients": [
         {
@@ -1345,7 +1359,7 @@
         {
           "ri_id": "2004",
           "name": "add 1 teaspoon bay",
-          "proportion": 1,
+          "proportion": 1.0,
           "unit_price": 400,
           "i_id": 44
         },
@@ -1394,7 +1408,7 @@
         {
           "ri_id": "2044",
           "name": "basil",
-          "proportion": 1,
+          "proportion": 20.0,
           "unit_price": 279,
           "i_id": 4
         }
@@ -1406,69 +1420,70 @@
       "nutrients": {
         "calories": 334.56,
         "cholesterol": 47.88,
-        "protein": 9.17
+        "protein": 9.17,
+        "fiber": 2.42
       },
       "ingredients": [
         {
           "ri_id": "10120499",
           "name": "elbow macaroni",
-          "proportion": 0.125,
+          "proportion": 0.625,
           "unit_price": 125,
           "i_id": 51
         },
         {
           "ri_id": "10311529",
           "name": "canned tomatoes",
-          "proportion": 0.51724137931,
+          "proportion": 0.517241379,
           "unit_price": 100,
           "i_id": 1
         },
         {
           "ri_id": "1129",
           "name": "hardboiled eggs",
-          "proportion": 0.33333333333,
+          "proportion": 0.333333333,
           "unit_price": 359,
           "i_id": 12
         },
         {
           "ri_id": "11291",
           "name": "onion",
-          "proportion": 0.125,
+          "proportion": 0.25,
           "unit_price": 99,
           "i_id": 3
         },
         {
           "ri_id": "4025",
           "name": "mayonnaise",
-          "proportion": 0.1,
+          "proportion": 0.333333333,
           "unit_price": 399,
           "i_id": 52
         },
         {
           "ri_id": "1001256",
           "name": "greek yogurt",
-          "proportion": 0.0625,
+          "proportion": 0.15625,
           "unit_price": 429,
           "i_id": 53
         },
         {
           "ri_id": "1032046",
           "name": "dijon mustard",
-          "proportion": 0.00694444444,
+          "proportion": 0.008333333,
           "unit_price": 179,
           "i_id": 15
         },
         {
           "ri_id": "2048",
           "name": "wine vinegar",
-          "proportion": 0.03125,
+          "proportion": 0.0625,
           "unit_price": 329,
           "i_id": 42
         },
         {
           "ri_id": "1029195",
           "name": "ni\u00e7oise olives",
-          "proportion": 0.55555555556,
+          "proportion": 0.6666667,
           "unit_price": 399,
           "i_id": 18
         },
@@ -1482,8 +1497,8 @@
         {
           "ri_id": "1019",
           "name": "m zarella cheese",
-          "proportion": 0.75,
-          "unit_price": 379,
+          "proportion": 0.0625,
+          "unit_price": 400,
           "i_id": 9
         },
         {
@@ -1646,7 +1661,7 @@
         "661984",
         "42312"
       ],
-      "unit_price": 400
+      "unit_price": 649
     },
     {
       "i_id": 8,
@@ -1673,7 +1688,7 @@
         "42312",
         "1697647"
       ],
-      "unit_price": 379
+      "unit_price": 400
     },
     {
       "i_id": 10,
@@ -1746,7 +1761,7 @@
         "659006",
         "653098"
       ],
-      "unit_price": 700
+      "unit_price": 400
     },
     {
       "i_id": 17,
@@ -1945,7 +1960,7 @@
         "644205",
         "661984"
       ],
-      "unit_price": 799
+      "unit_price": 400
     },
     {
       "i_id": 38,
@@ -2028,7 +2043,7 @@
       "recipe_ingredients": [
         "654318"
       ],
-      "unit_price": 400
+      "unit_price": 219
     },
     {
       "i_id": 47,
