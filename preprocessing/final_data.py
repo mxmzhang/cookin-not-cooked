@@ -3,19 +3,7 @@ import json
 def combine_schemas(spoonacular_file="spoonacular_structured_data.json", 
                    kroger_file="kroger_prices.json", 
                    gemini_file="gemini_query_results.json",
-                   output_file="combined_recipe_data.json"):
-    """
-    Combine data from multiple JSON files into a unified format
-    
-    Args:
-        spoonacular_file: File with recipe and ingredient data
-        kroger_file: File with pricing information
-        gemini_file: File with proportion information
-        output_file: Where to save the combined data
-    """
-    print(f"Loading data from source files...")
-    
-    # Load Spoonacular data
+                   output_file="combined_recipe_data.json"): 
     try:
         with open(spoonacular_file, 'r') as f:
             spoonacular_data = json.load(f)
@@ -23,7 +11,6 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
         print(f"Error loading Spoonacular data: {e}")
         return False
     
-    # Load Kroger price data
     try:
         with open(kroger_file, 'r') as f:
             kroger_data = json.load(f)
@@ -31,7 +18,6 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
         print(f"Error loading Kroger data: {e}")
         return False
     
-    # Load Gemini proportion data
     try:
         with open(gemini_file, 'r') as f:
             gemini_data = json.load(f)
@@ -39,7 +25,7 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
         print(f"Error loading Gemini data: {e}")
         return False
     
-    # Create price lookup dictionary
+    # create price lookup dictionary
     price_lookup = {}
     for ingredient in kroger_data["kroger_query"]["ingredients"]:
         i_id = ingredient["i_id"]
@@ -52,7 +38,7 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
         "measurement": measurement
     }
     
-    # Create proportion lookup dictionary
+    # create proportion lookup dictionary
     proportion_lookup = {}
     for recipe in gemini_data["gemini_query"]["recipes"]:
         r_id = recipe["r_id"]
@@ -64,7 +50,7 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
                 "package_cost": ingredient.get("package_cost")
             }
     
-    # Create ingredient-recipe mapping
+    # create ingredient-recipe mapping
     ingredient_recipes = defaultdict(list)
     for recipe_ingredients in spoonacular_data["recipe_ingredients"]:
         r_id = recipe_ingredients["r_id"]
@@ -76,13 +62,13 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
                 "ri_id": ri_id
             })
     
-    # Build the combined data structure
+    # combined data structure
     combined_data = {
         "recipes": [],
         "all_ingredients": []
     }
     
-    # Process recipes
+    # process recipes
     for recipe in spoonacular_data["recipes"]:
         r_id = recipe["r_id"]
         recipe_data = {
@@ -92,14 +78,14 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
             "ingredients": []
         }
         
-        # Find recipe ingredients
+        # find recipe ingredients
         for recipe_ingredients in spoonacular_data["recipe_ingredients"]:
             if recipe_ingredients["r_id"] == r_id:
                 for ingredient in recipe_ingredients["ingredients"]:
                     ri_id = ingredient["ri_id"]
                     i_id = ingredient["i_id"]
                     
-                    # Find ingredient name
+                    # find ingredient name
                     ingredient_name = ""
                     for ing in spoonacular_data["all_ingredients"]:
                         if ing["i_id"] == i_id:
@@ -109,6 +95,7 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
                     proportion_data = proportion_lookup.get(r_id, {}).get(ri_id, {})
                     price_data = price_lookup.get(i_id, {"unit_price": None})
 
+                    # process missing info
                     proportion = proportion_data.get("proportion")
                     if proportion is None:
                         proportion = 1
@@ -129,7 +116,7 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
         
         combined_data["recipes"].append(recipe_data)
     
-    # Process all ingredients
+    # process all ingredients
     for ingredient in spoonacular_data["all_ingredients"]:
         i_id = ingredient["i_id"]
         unit_price = price_lookup.get(i_id, {}).get("unit_price")
@@ -142,13 +129,13 @@ def combine_schemas(spoonacular_file="spoonacular_structured_data.json",
             "unit_price": unit_price
         }
         
-        # Add recipe ingredients using this ingredient
+        # add recipe ingredients using this ingredient
         for recipe_ref in ingredient_recipes.get(i_id, []):
-            ingredient_data["recipe_ingredients"].append(recipe_ref["ri_id"])
+            ingredient_data["recipe_ingredients"].append(recipe_ref["r_id"])
         
         combined_data["all_ingredients"].append(ingredient_data)
     
-    # Save combined data
+    # save everything
     try:
         with open(output_file, 'w') as f:
             json.dump(combined_data, f, indent=2)
@@ -173,9 +160,7 @@ if __name__ == "__main__":
                         help='Output file for combined data')
     
     args = parser.parse_args()
-    
-    print(f"\n=== COMBINING RECIPE DATA ===\n")
-    
+        
     success = combine_schemas(
         args.spoonacular,
         args.kroger,
@@ -186,4 +171,4 @@ if __name__ == "__main__":
     if success:
         print("Data combination successful!")
     else:
-        print("Data combination failed. Please check the errors above.")
+        print("Data combination failed.")

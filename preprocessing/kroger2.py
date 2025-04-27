@@ -29,7 +29,7 @@ def get_kroger_token():
         return None
 
 def search_kroger_product(name, token):
-    """Search for a product in the Kroger API by name"""
+    #search for a product in the Kroger API by name
     if not token:
         print(f"[!] No valid token for searching {name}")
         return {"data": []}
@@ -51,7 +51,7 @@ def search_kroger_product(name, token):
         return {"data": []}
 
 def extract_price_info(product_data):
-    """Extract pricing information from Kroger API response"""
+    #extract pricing information from Kroger API response
     items = product_data.get("data", [])
     if not items:
         return None
@@ -68,13 +68,13 @@ def extract_price_info(product_data):
     if not price or "regular" not in price:
         return None
     
-    # Get unit price in cents
+    # get unit price in cents
     unit_price_cents = int(price["regular"] * 100)
     
-    # Parse the size string to extract quantity and measurement
+    # parse the size string to extract quantity and measurement
     size_str = item.get("size", "1 unit")
     
-    # Try to extract quantity and unit from size string
+    # try to extract quantity and unit from size string
     try:
         parts = size_str.split()
         if len(parts) >= 2:
@@ -94,29 +94,22 @@ def extract_price_info(product_data):
     }
 
 def create_price_database(ingredients_file, output_file="kroger_prices.json"):
-    """
-    Create a price database for all ingredients in the new format
-    
-    Args:
-        ingredients_file: JSON file with ingredient data
-        output_file: Where to save the price data
-    """
-    # Load ingredients
+    #load ingredients
     try:
         with open(ingredients_file, 'r') as f:
             data = json.load(f)
             all_ingredients = data.get("all_ingredients", [])
             if not all_ingredients:
-                print("[!] No ingredients found in file")
+                print("[!] no ingredients found in file")
                 return False
     except Exception as e:
-        print(f"[!] Error loading ingredients: {e}")
+        print(f"[!] error loading ingredients: {e}")
         return False
     
-    # Fetch prices from Kroger API
+    # fetch prices from Kroger API
     token = get_kroger_token()
     if not token:
-        print("[x] Failed to get Kroger API token. Prices will not be updated.")
+        print("[x] failed to get Kroger API token")
         return False
         
     result = {
@@ -128,18 +121,17 @@ def create_price_database(ingredients_file, output_file="kroger_prices.json"):
     count = 0
     total = len(all_ingredients)
 
-    print(f"[*] Getting prices for {total} ingredients...")
+    print(f"[*] ----- getting prices for {total} ingredients-----")
     for ingredient in all_ingredients:
         count += 1
         i_id = ingredient["i_id"]
         name = ingredient["name"]
         
         try:
-            print(f"[{count}/{total}] Searching for price of: {name}")
             product_data = search_kroger_product(name, token)
             price_info = extract_price_info(product_data)
             
-            # Create the ingredient entry with the new structure
+            # create the ingredient entry with the new structure
             ingredient_entry = {
                 "i_id": i_id,
                 "name": name
@@ -151,20 +143,21 @@ def create_price_database(ingredients_file, output_file="kroger_prices.json"):
                     "unit_quantity": price_info["unit_quantity"],
                     "measurement": price_info["measurement"]
                 })
-                print(f"[✓] Found price for: {name} - {price_info['unit_price']/100} per {price_info['unit_quantity']} {price_info['measurement']}")
+                print(f"found price for: {name} - {price_info['unit_price']/100} per {price_info['unit_quantity']} {price_info['measurement']}")
             else:
                 ingredient_entry.update({
                     "unit_price": None,
                     "unit_quantity": 1,
                     "measurement": "unit"
                 })
-                print(f"[!] No price found for: {name}")
+                print(f"[X] no price found for: {name}")
 
             result["kroger_query"]["ingredients"].append(ingredient_entry)
-            time.sleep(0.2)  # Avoid rate limits
+            time.sleep(0.1)
 
         except Exception as e:
-            print(f"[x] Error for {name}: {e}")
+            print(f"[x] error for {name}: {e}")
+            #use generic entry
             result["kroger_query"]["ingredients"].append({
                 "i_id": i_id,
                 "name": name,
@@ -173,29 +166,20 @@ def create_price_database(ingredients_file, output_file="kroger_prices.json"):
                 "measurement": "unit"
             })
 
-    # Save prices to file
+    # save prices to file
     with open(output_file, "w") as f:
         json.dump(result, f, indent=2)
-    print(f"\n[✓] Saved ingredient prices to {output_file}")
-    
-    # Print sample of price data
-    print("\nSample of ingredient price data:")
-    for ingredient in result["kroger_query"]["ingredients"][:5]:
-        print(f"ID: {ingredient['i_id']}, Name: {ingredient['name']}, " +
-              f"Price: {ingredient.get('unit_price')}, Quantity: {ingredient.get('unit_quantity')} {ingredient.get('measurement')}")
-    
+    print(f"saved ingredient prices to {output_file}")   
     return True
 
 if __name__ == "__main__":
     import argparse
     
-    parser = argparse.ArgumentParser(description='Generate ingredient price database from Kroger API')
+    parser = argparse.ArgumentParser(description='generate ingredient price database from Kroger API')
     parser.add_argument('--input', default="spoonacular_structured_data.json", 
                         help='Input JSON file with ingredient data')
     parser.add_argument('--output', default="kroger_prices.json", 
                         help='Output file for ingredient prices')
     
     args = parser.parse_args()
-    
-    print(f"[*] Creating price database from {args.input} to {args.output}")
     create_price_database(args.input, args.output)
