@@ -3,6 +3,7 @@ from typing import Optional, Tuple
 from typing import List
 import numpy as np
 import json
+import math as math
 
 def preprocess_inventory(filename, data):
     ingredients = data["all_ingredients"]
@@ -28,7 +29,16 @@ def preprocess_disliked(filename, data):
                     disliked[ingrli["name"]] = ingrli["i_id"]
     return disliked
 
-def cp(data, budget, calorie_cap, inventory, disliked_ct, chosen_meals = 5):
+def preprocess_allergies(filename, data):
+    ingredients = data["all_ingredients"]
+    allergies = set()
+    with open(filename, 'r') as file:
+        for line in file:
+            allergen = line.strip()
+            allergies.add(allergen)
+    return allergies
+
+def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meals = 5):
     model = cp_model.CpModel()
     rlen = len(data["recipes"])
     ilen = len(data["all_ingredients"])
@@ -53,7 +63,6 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, chosen_meals = 5):
     model.Add(sum(x[rid] for rid in range(rlen)) == chosen_meals)
 
     # sum of usage for each ingredient i across chosen recipes <= inventory + b[i]
-
     for i in range(ilen):
         inv_i = inventory[i]["amount"]
         # print("ing id:", i)
@@ -89,6 +98,15 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, chosen_meals = 5):
     for rid in range(rlen):
         model.Add(round(recipes[rid].get("nutrients",{})["calories"]) * x[rid] <= calorie_cap)
 
+    # allergy constraint
+    for rid in range(rlen):
+        recipe = recipes[rid]
+        for ingr in recipe["ingredients"]:
+            if ingr["name"] in allergies:
+                model.Add(x[rid] == 0)
+                break
+    
+
     # objective function
     # soft constraint calculations
     dislike_expr = []
@@ -110,8 +128,49 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, chosen_meals = 5):
     obj_expr = model.NewIntVar(-100000000, 100000000, "obj_expr")
 
     # make sure units of things in objective function are scaled the same
-    model.Add(obj_expr == (40*total_protein - total_calories - total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
-    model.Maximize(obj_expr)
+    # model.Add(obj_expr == (60*total_protein - total_calories - 15*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
+    # model.Add(obj_expr == (40*total_protein - total_calories - 5*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
+    # model.Add(obj_expr == (80*total_protein - total_calories - 10*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
+    # model.Add(obj_expr == (50*total_protein - total_calories - 15*total_chol - 1000 * dislike_sum))
+    # model.Add(obj_expr == (70*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
+    # model.Add(obj_expr == (80*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
+    # model.Add(obj_expr == (63*total_protein - total_calories - 15*total_chol - 1000 * dislike_sum))
+    # model.Add(obj_expr == (80*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
+    # model.Add(obj_expr == (55*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
+    model.Add(obj_expr == (100*total_protein - total_calories - 30*total_chol - 1000 * dislike_sum))
+    # obj_expr = 145*total_protein - total_calories - 49*total_calories - 1000*dislike_sum
+
+    # for p in range(40,150,5):
+    #     for c in range(10,50,5):
+    #         obj_expr = p*total_protein - total_calories - c*total_calories - 1000*dislike_sum
+    #         model.Maximize(obj_expr)
+
+    #         solver = cp_model.CpSolver()
+    #         status = solver.Solve(model)
+
+    #         mindist = math.inf
+    #         minp = -1
+    #         minc = -1
+    #         if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
+    #             dist = math.sqrt((10- solver.Value(total_calories) / solver.Value(total_protein))**2+ 
+    #                 (10-solver.Value(total_calories) / solver.Value(total_chol))**2)
+    #             if dist < mindist:
+    #                 mindist = dist
+    #                 minp = p
+    #                 minc = c
+    #             if p == 100 and c == 25:
+    #                 print("hello")
+    #                 print(dist)
+    # print(minp)
+    # print(minc)
+    # print(mindist)
+    # return
+
+            
+
+    
+    # obj_expr = (int(223.3 - 0.7868*calorie_cap + 0.0009171*calorie_cap*calorie_cap))*total_protein - total_calories - (int(129.1 - 0.4538*calorie_cap + 0.0004523*calorie_cap*calorie_cap))*total_chol - 1000 * dislike_sum
+    # model.Maximize(obj_expr)
 
     solver = cp_model.CpSolver()
     status = solver.Solve(model)
@@ -156,11 +215,13 @@ def main():
     inventoryfile = "preprocessing/inventory.txt"
     dislikedfile = "preprocessing/disliked.txt"
     capfile = "preprocessing/cap.txt"
+    allergyfile = "preprocessing/allergies.txt"
     try:
         with open(mainfile, 'r') as file:
             data = json.load(file)
         inventory = preprocess_inventory(inventoryfile, data)
         disliked = preprocess_disliked(dislikedfile, data)
+        allergies = preprocess_allergies(allergyfile, data)
         recipes = data.get("recipes", [])
         disliked_ct = []
         for recipe in recipes:
@@ -188,7 +249,7 @@ def main():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return
-    cp(data, budget, calorie_cap, inventory, disliked_ct, recipe_num)
+    cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, recipe_num)
 
 if __name__ == '__main__':
     main()

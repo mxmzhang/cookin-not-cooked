@@ -200,7 +200,7 @@ def load_results_from_file(filename):
         print(f"File {filename} not found")
         return None
 
-my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
+#my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
  
 if __name__ == "__main__":
     output_file = "recipe_results.json"
