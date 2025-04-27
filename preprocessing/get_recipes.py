@@ -124,7 +124,7 @@ def get_recipe_info_bulk(recipe_ids):
     response = requests.get(f"{BASE_URL}/recipes/informationBulk", params=params)
     return response.json()
 
-def fetch_enriched_recipes(user_ingredients, max_results=100):
+def fetch_enriched_recipes(user_ingredients, max_results=15):
     basic_results = search_recipes_by_ingredients(user_ingredients, number=max_results)
     recipe_ids = [r['id'] for r in basic_results]
     detailed_info = get_recipe_info_bulk(recipe_ids)
@@ -204,7 +204,7 @@ def load_results_from_file(filename):
         print(f"File {filename} not found")
         return None
 
-my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
+#my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
  
 if __name__ == "__main__":
     output_file = "recipe_results.json"
