@@ -4,7 +4,7 @@ import os
 
 API_KEY = '2add8db43662436abe6dc85a5ae84a30'
 BASE_URL = 'https://api.spoonacular.com'
-'''
+
 def get_ingredients_with_amounts():
     print("Enter the ingredients you have (name and amount). Type 'done' to finish:")
     ingredients = []
@@ -54,7 +54,6 @@ def get_user_preferences(filename = "cap.txt"):
             print("Please enter a valid number.")
     with open(filename, 'w') as f:
         f.write(f"{calorie_cap}\n{num_recipes}\n")
-    print(f"Pantry ingredients saved to {filename}")
     return calorie_cap, num_recipes
 
 # Example usage
@@ -83,13 +82,11 @@ def save_disliked_ingredients_to_file(disliked_ingredients, filename="disliked.t
             f.write(f"{item}\n")
     print(f"Disliked ingredients saved to {filename}")
 
-'''
+
 
 #my_ingredients = ['broccoli', 'pasta', 'potato', 'egg', 'tomato', 'onion', 'chicken breast']
 my_ingredients = []
-with open("inventory.txt", "r") as f:
-    lines = f.readlines()
-    my_ingredients = [line.split(":")[0].strip() for line in lines]
+
 def search_recipes_by_ingredients(ingredients, number = 1, min_used=2):
     params = {
         'apiKey': API_KEY,
@@ -124,7 +121,7 @@ def get_recipe_info_bulk(recipe_ids):
     response = requests.get(f"{BASE_URL}/recipes/informationBulk", params=params)
     return response.json()
 
-def fetch_enriched_recipes(user_ingredients, max_results=100):
+def fetch_enriched_recipes(user_ingredients, max_results=15):
     basic_results = search_recipes_by_ingredients(user_ingredients, number=max_results)
     recipe_ids = [r['id'] for r in basic_results]
     detailed_info = get_recipe_info_bulk(recipe_ids)
