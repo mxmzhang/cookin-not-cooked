@@ -33,6 +33,8 @@ C:.
 │       final_data.py                     -> executable to consolidate and format recipe data
 │       combined_recipe_data.json         -> final recipe data schema
 │
+├───demo.mp4                              -> short demo video
+├───report.pdf                            -> report of our thoughts and findings! (download and open externally)
 └───__pycache__
         cp.cpython-312.pyc
 
