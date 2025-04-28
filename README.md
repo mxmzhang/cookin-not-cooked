@@ -2,41 +2,34 @@
 This project is a diet optimizer tool that helps users discover new recipes while staying within their budget and health goals using constraint programming.
 
 ## File structure
+```text
 C:.
 │   cp.py                             -> constraint solver file
 │   cp_testing.ipynb                  -> hard-coded small test cases
 │   graph.py
 │   README.md                                        
 │
-├───data                                  -> testing files for large dataset
-│       large_recipe_dataset.json         -> large 100 recipe dataset
-│       large_allergies.txt               -> editable user-input of allergies
-│       large_cap.txt                     -> editable user-input file of parameters (calories/meal, # meals, budget)
-|       large_disliked.txt                -> editable user-input file of disliked foods
-│       large_inventory.txt               -> editable user-input file of currently owned ingredients with amounts
-|
 ├───preprocessing
-│       allergies.txt                     -> editable user-input of allergies
-│       cap.txt                           -> editable user-input file of parameters (calories/meal, # meals, budget)
-|       disliked.txt                      -> editable user-input file of disliked foods
-│       inventory.txt                     -> editable user-input file of currently owned ingredients with amounts
-|
-│       pipeline.py                       -> executable to run all preprocessing steps at once with user input
-│       get_recipes.py                    -> query Spoonacular for relevant recipes
-│       recipe_results.json               -> results from Spoonacular API recipes queries
-│       format_recipe_data2.py            -> clean recipe data from Spoonacular
-│       spoonacular_structured_data.json  -> results from cleaning Spoonacular recipe data
-│       kroger2.py                        -> query Kroger API for ingredient prices
-│       kroger_prices.json                -> results from Kroger pricing queries
-│       gemini2.py                        -> query Gemini to get ingredient proportions / recipe
-│       gemini_query_results.json         -> results from Gemini proportions queries
-│       final_data.py                     -> executable to consolidate and format recipe data
-│       combined_recipe_data.json         -> final recipe data schema
+│       allergies.txt                 -> editable user-input of allergies
+│       cap.txt                       -> editable user-input file of parameters (calories/meal, # meals, budget)
+│       disliked.txt                  -> editable user-input file of disliked foods
+│       inventory.txt                 -> editable user-input file of currently owned ingredients with amounts
 │
-├───demo.mp4                              -> short demo video
-├───report.pdf                            -> report of our thoughts and findings! (download and open externally)
+│       pipeline.py                   -> executable to run all preprocessing steps at once with user input
+│       get_recipes.py                -> query Spoonacular for relevant recipes
+│       recipe_results.json           -> results from Spoonacular API recipes queries
+│       format_recipe_data2.py        -> clean recipe data from Spoonacular
+│       spoonacular_structured_data.json  -> results from cleaning Spoonacular recipe data
+│       kroger2.py                    -> query Kroger API for ingredient prices
+│       kroger_prices.json            -> results from Kroger pricing queries
+│       gemini2.py                    -> query Gemini to get ingredient proportions / recipe
+│       gemini_query_results.json     -> results from Gemini proportions queries
+│       final_data.py                 -> executable to consolidate and format recipe data
+│       combined_recipe_data.json     -> final recipe data schema
+│
 └───__pycache__
         cp.cpython-312.pyc
+```
 
 ## Try it out!
 Pre-Processing Data
