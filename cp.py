@@ -3,6 +3,7 @@ from typing import Optional, Tuple
 from typing import List
 import numpy as np
 import json
+import time
 import math as math
 
 def preprocess_inventory(filename, data):
@@ -98,6 +99,7 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
     for rid in range(rlen):
         model.Add(round(recipes[rid].get("nutrients",{})["calories"]) * x[rid] <= calorie_cap)
 
+
     # allergy constraint
     for rid in range(rlen):
         recipe = recipes[rid]
@@ -105,7 +107,7 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
             if ingr["name"] in allergies:
                 model.Add(x[rid] == 0)
                 break
-    
+
 
     # objective function
     # soft constraint calculations
@@ -128,7 +130,7 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
     obj_expr = model.NewIntVar(-100000000, 100000000, "obj_expr")
 
     # make sure units of things in objective function are scaled the same
-    # model.Add(obj_expr == (60*total_protein - total_calories - 15*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
+    model.Add(obj_expr == (4*total_protein - 1*total_chol - 50 * dislike_sum)) # test/experiment with objective functions
     # model.Add(obj_expr == (40*total_protein - total_calories - 5*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
     # model.Add(obj_expr == (80*total_protein - total_calories - 10*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
     # model.Add(obj_expr == (50*total_protein - total_calories - 15*total_chol - 1000 * dislike_sum))
@@ -137,7 +139,7 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
     # model.Add(obj_expr == (63*total_protein - total_calories - 15*total_chol - 1000 * dislike_sum))
     # model.Add(obj_expr == (80*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
     # model.Add(obj_expr == (55*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
-    model.Add(obj_expr == (100*total_protein - total_calories - 30*total_chol - 1000 * dislike_sum))
+    # model.Add(obj_expr == (100*total_protein - total_calories - 30*total_chol - 1000 * dislike_sum))
     # obj_expr = 145*total_protein - total_calories - 49*total_calories - 1000*dislike_sum
 
     # for p in range(40,150,5):
@@ -170,7 +172,7 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
 
     
     # obj_expr = (int(223.3 - 0.7868*calorie_cap + 0.0009171*calorie_cap*calorie_cap))*total_protein - total_calories - (int(129.1 - 0.4538*calorie_cap + 0.0004523*calorie_cap*calorie_cap))*total_chol - 1000 * dislike_sum
-    # model.Maximize(obj_expr)
+    model.Maximize(obj_expr)
 
     solver = cp_model.CpSolver()
     status = solver.Solve(model)
@@ -210,12 +212,18 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
         print("No feasible solution found.")
 
 
-def main():
+def main(mainfile = "preprocessing/combined_recipe_data.json", 
+        inventoryfile = "preprocessing/inventory.txt",
+        dislikedfile = "preprocessing/disliked.txt",
+        capfile = "preprocessing/cap.txt",
+        allergyfile = "preprocessing/allergies.txt"):
+    '''
     mainfile = "preprocessing/combined_recipe_data.json"
     inventoryfile = "preprocessing/inventory.txt"
     dislikedfile = "preprocessing/disliked.txt"
     capfile = "preprocessing/cap.txt"
     allergyfile = "preprocessing/allergies.txt"
+    '''
     try:
         with open(mainfile, 'r') as file:
             data = json.load(file)
@@ -249,8 +257,16 @@ def main():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return
+    start = time.time()
     cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, recipe_num)
+    end = time.time()
+    execution_time = end - start
+    print(f"\nexecution time: {execution_time:.4f} seconds")
 
 if __name__ == '__main__':
-    main()
+    main("preprocessing/combined_recipe_data.json", 
+         "preprocessing/inventory.txt",
+        "preprocessing/disliked.txt",
+        "preprocessing/cap.txt",
+        "preprocessing/allergies.txt")
 

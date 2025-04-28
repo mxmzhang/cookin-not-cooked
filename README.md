@@ -8,6 +8,13 @@ C:.
 │   graph.py
 │   README.md                                        
 │
+├───data                                  -> testing files for large dataset
+│       large_recipe_dataset.json         -> large 100 recipe dataset
+│       large_allergies.txt               -> editable user-input of allergies
+│       large_cap.txt                     -> editable user-input file of parameters (calories/meal, # meals, budget)
+|       large_disliked.txt                -> editable user-input file of disliked foods
+│       large_inventory.txt               -> editable user-input file of currently owned ingredients with amounts
+|
 ├───preprocessing
 │       allergies.txt                     -> editable user-input of allergies
 │       cap.txt                           -> editable user-input file of parameters (calories/meal, # meals, budget)
@@ -28,22 +35,20 @@ C:.
 │
 └───__pycache__
         cp.cpython-312.pyc
+
 ## Try it out!
 Pre-Processing Data
-The recipe data files are currently loaded with a big dataset containing 100 (the maximum amount) recipes pre-set on an inventory list of pasta, 
-broccoli, eggs, tomato, onion, potato and chicken breast. This is just because it takes ~10 minutes to process 100 recipes. 
-The recipes can also be changed by running 'python .\pipeline.py' in the preprocessing folder (cd .\preprocessing\) and following the prompts in the terminal for 
-calories per meal, budget and number of meals as well as inventory ingredients, disliked ingredients and allergies. 
+The recipes can in the dataset be changed by running 'python .\pipeline.py' in the preprocessing folder (cd .\preprocessing\) and following the prompts in the terminal for calories per meal, budget and number of meals as well as inventory ingredients, disliked ingredients and allergies. 
 The final JSON data scheme is held in spoonacular_structured_data.json and serves as the recipes that the CP solve will use.
 
-If you feel that the recipes generated are good, and you only want to change the constraints passed to the CP solver, then you can edit 'inventory.txt', 'disliked.txt', 'allergies.txt', and 'cap.txt' as you want. They are structured as follows, or see the original files for inspiration:
-    inventory.txt contains lines of the form 'ingredient: amount' where the amount is per unit as sold by Kroger, for example 6 eggs should be inputted as 'eggs: 0.5'
+If you feel that the recipes generated are good, and you only want to change the constraints passed to the CP solver, then you can edit 'inventory.txt', 'disliked.txt', 'allergies.txt', and 'cap.txt'. They are structured as follows, or see the original files for inspiration:
+    inventory.txt contains lines of the form 'ingredient: amount' where the amount is per unit as sold by Kroger, for example 6 eggs should be inputted as 'eggs: 0.5', feel free to guess or put random values, the CP solver will still work, it just might not be accurate to the real world
     disliked.txt contains a list of disliked foods each on a new line
     allergies.txt contains a list of foods the user is allergic to each on a new line
     cap.txt is of the form '{calories per meal cap}, {number of recipes}, {budget}'
 
-Constriant Solver
-Once you are happy with the recipes list and constraints, run 'python .\cp.py' in the main project folder to see the constrain solver's output which will be of the form
+Constraint Solver
+Once you are happy with the recipes list and constraints, you can run the last cell in cp_testing.ipynb to see the resulting recipes
 Solution status: OPTIMAL/FEASIBLE
 Chosen recipe IDs: [r_id1, r_id2...]
   -> recipe 1
