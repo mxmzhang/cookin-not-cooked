@@ -137,30 +137,44 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
     # model.Add(obj_expr == (63*total_protein - total_calories - 15*total_chol - 1000 * dislike_sum))
     # model.Add(obj_expr == (80*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
     # model.Add(obj_expr == (55*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
-    model.Add(obj_expr == (100*total_protein - total_calories - 30*total_chol - 1000 * dislike_sum))
-    # obj_expr = 145*total_protein - total_calories - 49*total_calories - 1000*dislike_sum
+    # model.Add(obj_expr == (100*total_protein - total_calories - 30*total_chol - 1000 * dislike_sum))
+    # obj_expr = 7*total_protein - 2*total_chol- 200*dislike_sum
+    # obj_expr = 40*total_protein - total_calories -10*total_chol-1000*dislike_sum
 
-    # for p in range(40,150,5):
-    #     for c in range(10,50,5):
-    #         obj_expr = p*total_protein - total_calories - c*total_calories - 1000*dislike_sum
+    obj_expr = round(0.006190*calorie_cap + 0.3571)*total_protein - round(0.001786*calorie_cap + 0.03571)*total_chol- 200*dislike_sum
+    print("weights", 0.006190*calorie_cap + 0.3571, 0.001786*calorie_cap + 0.03571)
+
+    # UNCOMMENT THIS SECTION OUT FOR EXPERIMENTATION
+    # THIS CODE WILL TRY TO FIND THE COEFFICIENT FOR PROTEIN THAT LEADS TO THE CLOSEST RATIOS TO 10
+    # mindist = math.inf
+    # minp = -1
+    # minc = -1
+    # for p in range(1,40):
+    #     for c in range(1,5):
+    #         obj_expr = p*total_protein - c*total_chol - 1000*dislike_sum
     #         model.Maximize(obj_expr)
 
     #         solver = cp_model.CpSolver()
     #         status = solver.Solve(model)
+    #         # print(solver.Value(total_calories))
 
-    #         mindist = math.inf
-    #         minp = -1
-    #         minc = -1
+    #         if solver.Value(total_calories) == 0 or solver.Value(total_protein) == 0 or solver.Value(total_chol) == 0:
+    #             continue
+
     #         if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
-    #             dist = math.sqrt((10- solver.Value(total_calories) / solver.Value(total_protein))**2+ 
-    #                 (10-solver.Value(total_calories) / solver.Value(total_chol))**2)
-    #             if dist < mindist:
+    #             # if (solver.Value(total_chol) == 0):
+    #             #     print(c, p)
+    #             dist = math.sqrt((10-solver.Value(total_calories) / solver.Value(total_protein))**2+(10-solver.Value(total_calories) / solver.Value(total_chol))**2)
+    #             # print(dist, solver.Value(total_calories) / solver.Value(total_protein), solver.Value(total_calories) / solver.Value(total_chol))
+    #             if dist < mindist and solver.Value(total_calories) / solver.Value(total_chol) > 7:
     #                 mindist = dist
     #                 minp = p
     #                 minc = c
-    #             if p == 100 and c == 25:
-    #                 print("hello")
-    #                 print(dist)
+    #             # if p == 7 and c == 2:
+    #             #     print("hello")
+    #             #     print(solver.Value(total_calories) / solver.Value(total_protein))
+    #             #     print(solver.Value(total_calories) / solver.Value(total_chol))
+    #             #     print(dist)
     # print(minp)
     # print(minc)
     # print(mindist)
@@ -170,7 +184,7 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
 
     
     # obj_expr = (int(223.3 - 0.7868*calorie_cap + 0.0009171*calorie_cap*calorie_cap))*total_protein - total_calories - (int(129.1 - 0.4538*calorie_cap + 0.0004523*calorie_cap*calorie_cap))*total_chol - 1000 * dislike_sum
-    # model.Maximize(obj_expr)
+    model.Maximize(obj_expr)
 
     solver = cp_model.CpSolver()
     status = solver.Solve(model)
