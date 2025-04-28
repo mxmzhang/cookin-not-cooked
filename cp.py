@@ -149,20 +149,25 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
 
     #         solver = cp_model.CpSolver()
     #         status = solver.Solve(model)
+    #         # print(solver.Value(total_calories))
 
-    #         mindist = math.inf
-    #         minp = -1
-    #         minc = -1
+    #         if solver.Value(total_calories) == 0 or solver.Value(total_protein) == 0 or solver.Value(total_chol) == 0:
+    #             continue
+
     #         if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
-    #             dist = math.sqrt((10- solver.Value(total_calories) / solver.Value(total_protein))**2+ 
-    #                 (10-solver.Value(total_calories) / solver.Value(total_chol))**2)
-    #             if dist < mindist:
+    #             # if (solver.Value(total_chol) == 0):
+    #             #     print(c, p)
+    #             dist = math.sqrt((10-solver.Value(total_calories) / solver.Value(total_protein))**2+(10-solver.Value(total_calories) / solver.Value(total_chol))**2)
+    #             # print(dist, solver.Value(total_calories) / solver.Value(total_protein), solver.Value(total_calories) / solver.Value(total_chol))
+    #             if dist < mindist and solver.Value(total_calories) / solver.Value(total_chol) > 7:
     #                 mindist = dist
     #                 minp = p
     #                 minc = c
-    #             if p == 100 and c == 25:
-    #                 print("hello")
-    #                 print(dist)
+    #             # if p == 7 and c == 2:
+    #             #     print("hello")
+    #             #     print(solver.Value(total_calories) / solver.Value(total_protein))
+    #             #     print(solver.Value(total_calories) / solver.Value(total_chol))
+    #             #     print(dist)
     # print(minp)
     # print(minc)
     # print(mindist)
