@@ -127,7 +127,7 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
 
     obj_expr = model.NewIntVar(-100000000, 100000000, "obj_expr")
 
-    # make sure units of things in objective function are scaled the same
+    # WHEN WE WANTED CALORIES IN THE OBJECTIVE FUNCTION
     # model.Add(obj_expr == (60*total_protein - total_calories - 15*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
     # model.Add(obj_expr == (40*total_protein - total_calories - 5*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
     # model.Add(obj_expr == (80*total_protein - total_calories - 10*total_chol - 1000 * dislike_sum)) # test/experiment with objective functions
@@ -138,11 +138,13 @@ def cp(data, budget, calorie_cap, inventory, disliked_ct, allergies, chosen_meal
     # model.Add(obj_expr == (80*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
     # model.Add(obj_expr == (55*total_protein - total_calories - 20*total_chol - 1000 * dislike_sum))
     # model.Add(obj_expr == (100*total_protein - total_calories - 30*total_chol - 1000 * dislike_sum))
-    # obj_expr = 7*total_protein - 2*total_chol- 200*dislike_sum
-    # obj_expr = 40*total_protein - total_calories -10*total_chol-1000*dislike_sum
+    
+    # SWITCHING TO NO CALORIES
+    obj_expr = 4*total_protein - total_chol- 200*dislike_sum
 
-    obj_expr = round(0.006190*calorie_cap + 0.3571)*total_protein - round(0.001786*calorie_cap + 0.03571)*total_chol- 200*dislike_sum
-    print("weights", 0.006190*calorie_cap + 0.3571, 0.001786*calorie_cap + 0.03571)
+    # TESTING OUT A LINEAR FUNCTION FOR WEIGHTS
+    # obj_expr = round(0.006190*calorie_cap + 0.3571)*total_protein - round(0.001786*calorie_cap + 0.03571)*total_chol- 200*dislike_sum
+    # print("weights", 0.006190*calorie_cap + 0.3571, 0.001786*calorie_cap + 0.03571)
 
     # UNCOMMENT THIS SECTION OUT FOR EXPERIMENTATION
     # THIS CODE WILL TRY TO FIND THE COEFFICIENT FOR PROTEIN THAT LEADS TO THE CLOSEST RATIOS TO 10
